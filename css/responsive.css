@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width:920px) {
+    .logo img{
+        width: 23px;
+        
+        height: 22px;
+    }
+    .logo h1{
+        font-size: 20px;
+    }
+    nav{
+        display: none;
+    }
+    header img{
+        display: block;
+    }
+    .about{
+        padding-block: 64px;
+    }
+    .about h3{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .about p{
+        padding-block: 40px;
+        font-size: 24px;
+        font-weight: 400;
+    }
+    .about p span{
+        padding: 4px 8px;
+        font-size: 16px;
+    }
+    .aboutcon-flex{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 16px;
+        row-gap: 0px;
+    }
+    .aboutcontext p{
+        padding-block: 4px 0;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .aboutcontext h4{
+        padding-block: 8px 0;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .servicecol{
+        padding-top: 40px;
+    }
+    .service h3{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .servicecontent{
+        display: flex;
+        flex-direction: column;
+        padding: 16px 0;
+    }
+    .servicecontent p{
+        width: 100%;
+        font-size: 16px;
+    }
+    .service-text{
+        align-items: flex-start;
+    }
+    .service-text p{
+        font-size: 40px;
+    }
+    .service-text span{
+        font-size: 20px;
+    }
+    .service-text{
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .aboutcon-flex{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 24px;
+    }
+    .service{
+        padding-block: 48px 16px;
+    }
+    .about{
+        padding-block: 48px 16px;
+    }
+}

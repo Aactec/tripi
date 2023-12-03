@@ -19,5 +19,6 @@
         "titleBar.activeBackground": "#db7093",
         "titleBar.border": "#db7093",
         "titleBar.inactiveBackground": "#db709399"
-    }
+    },
+    "liveServer.settings.port": 5501
 }
