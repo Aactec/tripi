@@ -30,10 +30,14 @@ header{
     display: block;
 }
 
+.logo span{
+    font-size: 24px;
+}
+
 nav{
     display: flex;
     align-items: center;
-    gap: 96px;
+    gap: 180px;
 }
 
 nav ul{
@@ -85,34 +89,98 @@ section{
     font-family: 'Satoshi', sans-serif;
 }
 
+.hero-section{
+    width: 88%;
+    margin: auto;
+    padding-block: 40px;
+}
+
+.hero-section h1{
+    font-size: 120px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 7rem;
+    color: #FFFFFF;
+    padding-block: 0px 40px;
+}
+
+.hero-section h1 span{
+    color: #1D956A;
+}
+
+.scrollimage{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imagecarousel img{
+    border-radius: 20px;
+}
+
+form{
+    margin-inline: 48px 72px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    background: #191919;
+    border-radius: 16px;
+    padding-block: 20px;
+    padding-inline: 32px 96px;
+    margin-block: 40px;
+}
+
+.formcontent{
+    display: grid;
+    gap: 16px;
+    font-family: 'Satoshi', sans-serif;
+}
+
+.formcontent label{
+    color: #B3B3B3;
+}
+
+.formcontent select{
+    background: transparent;
+    padding-block: 12px;
+    padding-inline: 8px 20px;
+    border-radius: 8px;
+    color: #B3B3B3;
+    width: 100%;
+    max-width: 200px;
+}
+
+.formcontent input{
+    background: transparent;
+    padding-block: 12px;
+    padding-inline: 8px;
+    border-radius: 8px;
+    color: #B3B3B3;
+    border: 1px solid #B3B3B3;
+    width: 100%;
+    max-width: 180px;
+}
+
+form button{
+    background: #1D956A;
+    outline: none;
+    border: none;
+    padding: 20px 8px;
+    border-radius: 8px;
+    position: absolute;
+    right: 48px;
+    /* max-height: 124px;
+    height: 100%;
+    width: 77px; */
+}
+
 .sponsor-logo{
     background: #191919;
-    padding: 16px 0;
+    padding: 16px 60px;
     display: grid;
     grid-template-columns: repeat(5, auto);
     place-items: center;
-}
-
-.sponsor-logo img{
-    width: 100%;
-    height: 100%;
-    max-height: 171px;
-}
-
-.sponsor-logo img:nth-child(1){
-    max-width: 169px;
-}
-.sponsor-logo img:nth-child(2){
-    max-width: 171px;
-}
-.sponsor-logo img:nth-child(3){
-    max-width: 318px;
-}
-.sponsor-logo img:nth-child(4){
-    max-width: 269px;
-}
-.sponsor-logo img:nth-child(5){
-    max-width: 167px;
+    gap: 16px;
 }
 
 .about{
@@ -164,10 +232,9 @@ section{
 }
 
 .about-con{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 16px;
-    /* max-width: 397px; */
-    /* width: 100%; */
 }
 
 .about-con button{
@@ -180,6 +247,10 @@ section{
     outline: none;
     background: #1D956A;
     color: #FFFFFF;
+}
+
+.about-con button span{
+    font-size: 30px;
 }
 
 .service{
@@ -200,16 +271,15 @@ section{
 
 .servicecontent{
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
+    gap: 10rem;
     padding: 24px 0;
     text-align: left;
 }
 
-.servicecontent p{
-    width: 40%;
-    font-size: 32px;
-    font-weight: 400;
+.servicecontent span{
+    font-size: 36px;
+    color: #1D956A;
 }
 
 .servicecontent:nth-child(1){
@@ -228,16 +298,17 @@ section{
 .service-text{
     display: flex;
     align-items: start;
-    gap: 6rem;
+    gap: 3rem;
 }
 
-.service-text span{
-    font-size: 36px;
-    color: #1D956A;
-}
-
-.service-text p{
+.service-text p:nth-child(1){
     font-size: 60px;
     font-weight: 400;
-    width: 79%;
+    width: 55%;
+}
+
+.service-text p:nth-child(2){
+    width: 40%;
+    font-size: 32px;
+    font-weight: 400;
 }

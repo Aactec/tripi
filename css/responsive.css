@@ -3,7 +3,22 @@
     padding: 0;
 }
 
-@media (max-width:920px) {
+@media (max-width: 1024px) {
+    .sponsor-logo{
+        overflow-x: scroll;
+    }
+    .about-con button span{
+        font-size: 20px;
+    }
+    .servicecontent{
+        gap: 4rem;
+    }
+    .service-text{
+        gap: 1rem;
+    }
+}
+
+@media (max-width:840px) {
     .logo img{
         width: 23px;
         
@@ -13,10 +28,29 @@
         font-size: 20px;
     }
     nav{
-        display: none;
+        gap: 56px;
     }
-    header img{
-        display: block;
+    .sponsor-logo{
+        overflow-x: scroll;
+    }
+    .sponsor-logo img{
+        height: 140px;
+    }
+    
+    .sponsor-logo img:nth-child(1){
+        width: 136px;
+    }
+    .sponsor-logo img:nth-child(2){
+        width: 136px;
+    }
+    .sponsor-logo img:nth-child(3){
+        width: 280px;
+    }
+    .sponsor-logo img:nth-child(4){
+        width: 240px;
+    }
+    .sponsor-logo img:nth-child(5){
+        width: 136px;
     }
     .about{
         padding-block: 64px;
@@ -30,6 +64,10 @@
         font-size: 24px;
         font-weight: 400;
     }
+    .about svg{
+        width: 30px;
+        height: 25px;
+    }
     .about p span{
         padding: 4px 8px;
         font-size: 16px;
@@ -37,8 +75,7 @@
     .aboutcon-flex{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 16px;
-        row-gap: 0px;
+        gap: 20px;
     }
     .aboutcontext p{
         padding-block: 4px 0;
@@ -47,8 +84,16 @@
     }
     .aboutcontext h4{
         padding-block: 8px 0;
-        font-size: 16px;
+        font-size: 24px;
         font-weight: 500;
+    }
+    .about-con{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 16px;
+    }
+    .about-con button span{
+        font-size: 14px;
     }
     .servicecol{
         padding-top: 40px;
@@ -58,38 +103,73 @@
         font-weight: 400;
     }
     .servicecontent{
-        display: flex;
-        flex-direction: column;
-        padding: 16px 0;
+        gap: 4rem;
     }
-    .servicecontent p{
+    .servicecontent span{
+        font-size: 20px;
+    }
+    .service-text p:nth-child(1){
+        width: 100%;
+        font-size: 36px;
+    }
+    .service-text p:nth-child(2){
         width: 100%;
         font-size: 16px;
     }
     .service-text{
-        align-items: flex-start;
-    }
-    .service-text p{
-        font-size: 40px;
-    }
-    .service-text span{
-        font-size: 20px;
-    }
-    .service-text{
+        flex-direction: column;
         gap: 1rem;
+        text-align: left;
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 600px) {
+    nav{
+        display: none;
+    }
+    header img{
+        display: block;
+    }
+    .sponsor-logo{
+        padding: 16px 40px;
+        background: transparent;
+        gap: 24px;
+    }
+    .sponsor-logo img{
+        height: 92px;
+    }
+    .sponsor-logo img:nth-child(1){
+        width: 91px;
+    }
+    .sponsor-logo img:nth-child(2){
+        width: 91px;
+    }
+    .sponsor-logo img:nth-child(3){
+        width: 191px;
+    }
+    .sponsor-logo img:nth-child(4){
+        width: 160px;
+    }
+    .sponsor-logo img:nth-child(5){
+        width: 91px;
+    }
     .aboutcon-flex{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 24px;
+        gap: 32px;
+    }
+    .about{
+        padding-block: 48px 16px;
+    }
+    .about svg{
+        width: 20px;
+        height: 20px;
     }
     .service{
         padding-block: 48px 16px;
     }
-    .about{
-        padding-block: 48px 16px;
+    .servicecontent{
+        justify-content: space-between;
+        gap: 1.5rem;
     }
 }
