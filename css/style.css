@@ -348,7 +348,7 @@ form[method=get] button{
 
 .newsform h3{
     color: #FFFFFF;
-    font-size: 40px;
+    font-size: 16px;
     font-weight: 700;
     text-align: center;
 }
@@ -421,7 +421,7 @@ footer form{
     display: grid;
     grid-template-columns: repeat(2, auto);
     margin: auto;
-    width: 80%;
+    width: 84%;
     margin-block: 60px;
     gap: 4px;
 }
@@ -458,6 +458,7 @@ footer form button img{
 .footcon-flex{
     display: flex;
     align-items: center;
+    gap: 44px;
 }
 
 .footcon{
