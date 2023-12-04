@@ -348,9 +348,10 @@ form[method=get] button{
 
 .newsform h3{
     color: #FFFFFF;
-    font-size: 16px;
+    font-size: 40px;
     font-weight: 700;
     text-align: center;
+    display: inline-block;
 }
 
 .newsform form{

@@ -55,6 +55,9 @@
     .sponsor-logo{
         overflow-x: scroll;
     }
+    .sponsor-logo::-webkit-scrollbar{
+        display: none;
+    }
     .sponsor-logo img{
         height: 140px;
     }
@@ -97,6 +100,9 @@
     .aboutcon-flex{
         overflow-x: scroll;
         gap: 20px;
+    }
+    .aboutcon-flex::-webkit-scrollbar{
+        display: none;
     }
     .aboutcontext p{
         padding-block: 4px 0;
@@ -141,6 +147,15 @@
         flex-direction: column;
         gap: 1rem;
         text-align: left;
+    }
+    .newsform form{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        width: 100%;
+    }
+    .newsform h3{
+        font-size: 32px;
     }
 }
 
@@ -199,6 +214,9 @@
         overflow-x: scroll;
         gap: 32px;
     }
+    .aboutcon-flex::-webkit-scrollbar{
+        display: none;
+    }
     .about{
         padding-block: 48px 16px;
     }
@@ -215,7 +233,7 @@
     }
     .newsform h3{
         color: #FFFFFF;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 700;
     }
     .newsform form{
@@ -242,9 +260,10 @@
     }
     .footercontent{
         flex-direction: column;
-        margin: 0;
+        align-items: normal;
+        gap: 100px;
     }
     .footcon-flex{
-        flex-direction: column;
+        justify-content: space-between;
     }
 }
