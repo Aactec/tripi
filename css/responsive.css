@@ -19,6 +19,14 @@
 }
 
 @media (max-width:840px) {
+    .hero-section h1{
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 3.5rem;
+    }
+    #arright, #arleft{
+        width: 92px;
+    }
     .logo img{
         width: 23px;
         
@@ -28,7 +36,21 @@
         font-size: 20px;
     }
     nav{
-        gap: 56px;
+        gap: 24px;
+    }
+    form[method=get]{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        background: #191919;
+        position: relative;
+        width: 80%;
+        margin: auto;
+        margin-block: 40px;
+    }
+    form[method=get] button{
+        top: 68px;
+        right: 30px;
     }
     .sponsor-logo{
         overflow-x: scroll;
@@ -73,8 +95,7 @@
         font-size: 16px;
     }
     .aboutcon-flex{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        overflow-x: scroll;
         gap: 20px;
     }
     .aboutcontext p{
@@ -124,11 +145,32 @@
 }
 
 @media (max-width: 600px) {
+    .hero-section h1{
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 2.5rem;
+    }
+    #arright, #arleft{
+        width: 52px;
+    }
     nav{
         display: none;
     }
     header img{
         display: block;
+    }
+    form[method=get]{
+        margin: auto;
+        width: 84%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        background: transparent;
+    }
+    .formcontent input{
+        max-width: 152px;
+    }
+    form[method=get] button{
+        display: none;
     }
     .sponsor-logo{
         padding: 16px 40px;
@@ -154,8 +196,7 @@
         width: 91px;
     }
     .aboutcon-flex{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        overflow-x: scroll;
         gap: 32px;
     }
     .about{
@@ -171,5 +212,21 @@
     .servicecontent{
         justify-content: space-between;
         gap: 1.5rem;
+    }
+    .newsform h3{
+        color: #FFFFFF;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .newsform form{
+        flex-direction: column;
+    }
+    footer form{
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+    }
+    footer form button:nth-child(1){
+        grid-column: 1;
     }
 }

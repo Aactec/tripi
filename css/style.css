@@ -43,6 +43,9 @@ nav{
 nav ul{
     display: flex;
     gap: 24px;
+    background: #191919;
+    padding: 16px 28px;
+    border-radius: 4px;
 }
 
 nav ul li{
@@ -116,9 +119,11 @@ section{
 
 .imagecarousel img{
     border-radius: 20px;
+    width: 100%;
+    max-width: 826px;
 }
 
-form{
+form[method=get]{
     margin-inline: 48px 72px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -157,11 +162,10 @@ form{
     border-radius: 8px;
     color: #B3B3B3;
     border: 1px solid #B3B3B3;
-    width: 100%;
-    max-width: 180px;
+    max-width: 168px;
 }
 
-form button{
+form[method=get] button{
     background: #1D956A;
     outline: none;
     border: none;
@@ -169,9 +173,6 @@ form button{
     border-radius: 8px;
     position: absolute;
     right: 48px;
-    /* max-height: 124px;
-    height: 100%;
-    width: 77px; */
 }
 
 .sponsor-logo{
@@ -215,8 +216,7 @@ form button{
 }
 
 .aboutcon-flex img{
-    max-width: 397px;
-    width: 100%;
+    width: 366px;
 }
 
 .aboutcontext p{
@@ -310,5 +310,194 @@ form button{
 .service-text p:nth-child(2){
     width: 40%;
     font-size: 32px;
+    font-weight: 400;
+}
+
+.latestnews{
+    position: relative;
+}
+
+.latestnews #plus-sign{
+    position: relative;
+    top: 380px;
+    right: 4px;
+    float: right;
+    width: 200px;
+}
+
+.newsform{
+    background: #1D956A;
+    width: 84%;
+    margin: auto;
+    margin-block: 140px;
+    z-index: 1;
+    position: relative;
+    border-top-right-radius: 24px;
+    border-top-left-radius: 140px;
+    border-bottom-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    padding: 120px 80px;
+    box-sizing: border-box;
+}
+
+.newsform #plane{
+    position: absolute;
+    top: -72px;
+    right: -10px;
+}
+
+.newsform h3{
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.newsform form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin: auto;
+    width: 80%;
+    margin-block-start: 68px;
+}
+
+.input-form{
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.newsform .input-form input{
+    padding: 24px 68px;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 100%;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+.input-form img{
+    position: absolute;
+    float: left;
+    left: 36px;
+    top: 24px;
+    width: 24px;
+}
+
+form button{
+    padding: 21px 56px;
+    border-radius: 12px;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    background: #111111;
+    color: #FFFFFF;
+}
+
+footer{
+    width: 84%;
+    margin: auto;
+    font-family: 'Satoshi', sans-serif;
+}
+
+.footlogo{
+    display: grid;
+    place-content: center;
+}
+
+footer h3{
+    color: #FFFFFF;
+    font-size: 64px;
+    font-weight: 500;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+footer form{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin: auto;
+    width: 80%;
+    margin-block: 60px;
+    gap: 4px;
+}
+
+footer form button:nth-child(1){
+    grid-column: span 2;
+    background: #1D956A;
+    border-radius: 100px;
+    padding: 48px 0px;
+}
+
+footer form button:nth-child(2), footer form button:nth-child(3){
+    background: transparent;
+    border: 1px solid #282828;
+    border-radius: 100px;
+    padding: 40px 94px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+footer form button img{
+    margin: 0;
+}
+
+.footercontent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 72px;
+}
+
+.footcon-flex{
+    display: flex;
+    align-items: center;
+}
+
+.footcon{
+    display: grid;
+    gap: 28px;
+}
+
+.footcon p{
+    color: #808080;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.footercontent ul li{
+    list-style-type: none;
+    margin-block: 8px;
+}
+
+.footercontent ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+footer img{
+    display: flex;
+    margin: 0 0 72px auto;
+}
+
+.foot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #5B5B5B;
+    padding-block: 32px;
+    color: #808080;
+}
+
+.foot p{
+    font-size: 24px;
     font-weight: 400;
 }

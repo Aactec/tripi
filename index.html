@@ -9,33 +9,33 @@
         <link href="css/responsive.css" rel="stylesheet">
     </head>
     <body>
-        <main>
-            <header>
-                <div class="logo">
-                    <img src="/image/logo.png" alt="">
-                    <span>TRIPI</span>
+        <header>
+            <div class="logo">
+                <img src="/image/logo.png" alt="">
+                <span>TRIPI</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Destinations</a></li>
+                    <li><a href="">Bookings</a></li>
+                </ul>
+                <div class="btn">
+                    <button type="button">Log in</button>
+                    <button type="button">Sign up</button>
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="">About us</a></li>
-                        <li><a href="">Destinations</a></li>
-                        <li><a href="">Bookings</a></li>
-                    </ul>
-                    <div class="btn">
-                        <button type="button">Log in</button>
-                        <button type="button">Sign up</button>
-                    </div>
-                </nav>
-                <img src="/image/menu.png" alt="menubar">
-            </header>
+            </nav>
+            <img src="/image/menu.png" alt="menubar">
+        </header>
+        <main>
             <section class="hero-section">
                 <h1><span>Travel,</span> enjoy and live a new and full <span>life</span></h1>
                 <div class="scrollimage">
-                    <img src="/image/left-arrow.png" alt="">
+                    <img id="arleft" src="/image/left-arrow.png" alt="">
                     <div class="imagecarousel">
                         <img src="/image/countryimage.png" alt="">
                     </div>
-                    <img src="/image/right-arrow.png" alt="">
+                    <img id="arright" src="/image/right-arrow.png" alt="">
                 </div>
             </section>
             <form action="" method="get">
@@ -152,6 +152,75 @@
                     </div>
                 </div>
             </section>
+            <section class="destination"></section>
+            <section class="review"></section>
+            <section class="latestnews">
+                <img id="plus-sign" src="/image/Group 5.png" alt="">
+                <div class="newsform">
+                    <img id="plane" src="/image/plane.png" alt="">
+                    <h3>Subscribe to get information, latest news and other
+                        interesting offers about Tripi.</h3>
+                    <form action="">
+                        <div class="input-form">
+                            <input type="email" name="" id="" placeholder="Your Email">
+                            <img src="/image/envelope.png" alt="">
+                        </div>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </section>
         </main>
+        <footer>
+            <div class="footlogo">
+                <img src="/image/footlogo.png" alt="">
+            </div>
+            <h3>With us, every moment matters</h3>
+            <form action="">
+                <button type="button">Get started</button>
+                <button type="button">
+                    <img src="/image/sms.png" alt="">
+                    <p>Contact us</p>
+                </button>
+                <button type="button">
+                    <img src="/image/booknow.png" alt="">
+                    <p>Book now</p>
+                </button>
+            </form>
+            <section class="footer">
+                <div class="footercontent">
+                    <div class="footcon-flex">
+                        <div class="footcon">
+                            <p>Company</p>
+                            <ul>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Destinations</a></li>
+                                <li><a href="#">Bookings</a></li>
+                            </ul>
+                        </div>
+                        <div class="footcon">
+                            <p>Legal</p>
+                            <ul>
+                                <li><a href="#">Terms of use</a></li>
+                                <li><a href="#">Privacy policy</a></li>
+                                <li><a href="#">Travel rules</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footcon">
+                        <p>Social</p>
+                        <ul>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <img src="/image/footerlogo.png" alt="">
+                <div class="foot">
+                    <p>All rights reserved.</p>
+                    <p>2023 Tripi</p>
+                </div>
+            </section>
+        </footer>
     </body>
 </html>
