@@ -313,6 +313,25 @@ form[method=get] button{
     font-weight: 400;
 }
 
+.destination{
+    width: 84%;
+    margin: auto;
+}
+
+.destination h3{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.destgrid{
+    display: grid;
+    overflow-x: scroll;
+}
+
+.destgrid::-webkit-scrollbar{
+    display: none;
+}
+
 .latestnews{
     position: relative;
 }

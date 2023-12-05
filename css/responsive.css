@@ -10,6 +10,13 @@
     .about-con button span{
         font-size: 20px;
     }
+    .aboutcon-flex{
+        overflow-x: scroll;
+        gap: 32px;
+    }
+    .aboutcon-flex::-webkit-scrollbar{
+        display: none;
+    }
     .servicecontent{
         gap: 4rem;
     }
@@ -157,6 +164,22 @@
     .newsform h3{
         font-size: 32px;
     }
+    footer form{
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+    }
+    footer form button:nth-child(1){
+        grid-column: 1;
+        padding: 36px 10px;
+        font-size: 24px;
+    }
+    footer form button:nth-child(2), footer form button:nth-child(3){
+        padding: 28px 10px;
+    }
+    footer form button p{
+        font-size: 24px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -249,6 +272,14 @@
     }
     footer form button:nth-child(1){
         grid-column: 1;
+        padding: 30px 10px;
+        font-size: 20px;
+    }
+    footer form button:nth-child(2), footer form button:nth-child(3){
+        padding: 25px 10px;
+    }
+    footer form button p{
+        font-size: 20px;
     }
     footer h3{
         color: #FFFFFF;
