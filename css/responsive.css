@@ -23,6 +23,20 @@
     .service-text{
         gap: 1rem;
     }
+    .latestnews #plus-sign{
+        top: 430px;
+    }
+    footer form button:nth-child(1){
+        font-size: 28px;
+        color: #FFFFFF;
+    }
+    footer form button p{
+        font-size: 24px;
+        color: #FFFFFF;
+    }
+    footer form button img{
+        width: 28px;
+    }
 }
 
 @media (max-width:840px) {
@@ -55,7 +69,7 @@
         margin: auto;
         margin-block: 40px;
     }
-    form[method=get] button{
+    form[method=get] button[type=submit]{
         top: 68px;
         right: 30px;
     }
@@ -122,8 +136,6 @@
         font-weight: 500;
     }
     .about-con{
-        display: flex;
-        flex-direction: column-reverse;
         gap: 16px;
     }
     .about-con button span{
@@ -155,14 +167,109 @@
         gap: 1rem;
         text-align: left;
     }
+    .destination h3{
+        font-size: 16px;
+    }
+    .destgrid{
+        gap: 16px;
+        margin-block: 52px;
+    }
+    .destinationcontent{
+        max-width: 368px;
+        padding: 14px;
+        border-radius: 4px;
+    }
+    .destinationcontent img{
+        width: 288px;
+    }
+    .desthead h4{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .desthead .star svg{
+        width: 13px;
+    }
+    .destinationcontent span svg{
+        width: 14px;
+    }
+    .dest-icon p{
+        font-size: 12px;
+    }
+    .destinationcontent p{
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .destcon p{
+        font-size: 18px;
+    }
+    .destcon button{
+        font-size: 16px;
+    }
+    .destarrow{
+        margin-top: 28px;
+    }
+    .destarrow img{
+        width: 44px;
+    }
+    .review h3{
+        font-size: 16px;
+    }
+    .reviewcontent{
+        width: 460px;
+        padding: 24px;
+    }
+    .revhead .staricon svg{
+        width: 14px;
+    }
+    .revhead .clientdetails{
+        align-items: start;
+        gap: 8px;
+    }
+    .clientdetails img{
+        width: 44px;
+    }
+    .clientdetails h4{
+        font-size: 18px;
+    }
+    .clientdetails p{
+        font-size: 14px;
+    }
+    .reviewcontent h5{
+        font-size: 16px;
+        padding-block: 24px 12px;
+    }
+    .latestnews #plus-sign{
+        top: 376px;
+        width: 168px;
+    }
+    .newsform{
+        padding: 88px 68px;
+    }
     .newsform form{
         display: flex;
         flex-direction: column;
         gap: 24px;
         width: 100%;
+        margin-block-start: 40px;
     }
     .newsform h3{
         font-size: 32px;
+    }
+    .newsform #plane{
+        width: 116px;
+    }
+    .newsform .input-form input{
+        padding: 20px 68px;
+        font-size: 16px;
+    }
+    .input-form img{
+        top: 18px;
+        width: 24px;
+    }
+    .newsform form button{
+        padding: 20px 56px;
+        font-size: 16px;
+        width: 100%;
     }
     footer form{
         display: grid;
@@ -173,12 +280,17 @@
         grid-column: 1;
         padding: 36px 10px;
         font-size: 24px;
+        color: #FFFFFF;
     }
     footer form button:nth-child(2), footer form button:nth-child(3){
         padding: 28px 10px;
     }
     footer form button p{
         font-size: 24px;
+        color: #FFFFFF;
+    }
+    footer form button img{
+        width: 32px;
     }
 }
 
@@ -203,6 +315,23 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 16px;
         background: transparent;
+        padding-inline: 24px 24px;
+    }
+    form[method=get] #subtn{
+        background: #1D956A;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        outline: none;
+        border: none;
+        padding: 8px 24px;
+        border-radius: 8px;
+        margin-top: 36px;
+    }
+    form[method=get] button p{
+        font-size: 13px;
+        font-weight: 500;
+        color: #FFFFFF;
     }
     .formcontent input{
         max-width: 152px;
@@ -254,6 +383,105 @@
         justify-content: space-between;
         gap: 1.5rem;
     }
+    .destination h3{
+        font-size: 16px;
+    }
+    .destgrid{
+        gap: 16px;
+        margin-block: 40px;
+    }
+    .destgrid::-webkit-scrollbar{
+        display: none;
+    }
+    .destinationcontent{
+        max-width: 260px;
+        padding: 12px;
+        border-radius: 4px;
+    }
+    .destinationcontent img{
+        width: 216px;
+    }
+    .desthead h4{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .desthead .star svg{
+        width: 12px;
+    }
+    .destinationcontent span svg{
+        width: 12px;
+    }
+    .dest-icon p{
+        font-size: 10px;
+    }
+    .destinationcontent p{
+        font-size: 10px;
+        font-weight: 500;
+        margin-block: 6px;
+    }
+    .destcon p{
+        font-size: 14px;
+    }
+    .destcon button{
+        font-size: 12px;
+        padding: 6px 16px;
+    }
+    .destarrow{
+        gap: 40px;
+        margin-top: 60px;
+    }
+    .destarrow img{
+        width: 40px;
+    }
+    .review{
+        padding-block: 40px;
+    }
+    .review h3{
+        font-size: 16px;
+    }
+    .reviewcontent{
+        width: 280px;
+        padding: 20px;
+    }
+    .revhead .staricon svg{
+        width: 8px;
+    }
+    .revhead .clientdetails{
+        align-items: start;
+        gap: 8px;
+    }
+    .clientdetails img{
+        width: 32px;
+    }
+    .clientdetails h4{
+        font-size: 14px;
+    }
+    .clientdetails p{
+        font-size: 12px;
+    }
+    .reviewcontent h5{
+        font-size: 13px;
+        padding-block: 24px 12px;
+    }
+    .reviewcontent p{
+        font-size: 10px;
+        padding-block: 4px 16px;
+    }
+    .reviewarrow{
+        padding-top: 24px;
+    }
+    .reviewarrow img{
+        width: 16px;
+    }
+    .latestnews #plus-sign{
+        top: 280px;
+        width: 114px;
+    }
+    .newsform{
+        padding: 68px 48px;
+        border-top-left-radius: 88px;
+        margin-block: 60px;
+    }
     .newsform h3{
         color: #FFFFFF;
         font-size: 16px;
@@ -261,9 +489,26 @@
     }
     .newsform form{
         flex-direction: column;
+        gap: 16px;
     }
     .newsform .inputform input{
         width: 200px;
+    }
+    .newsform #plane{
+        top: -32px;
+        right: 8px;
+        width: 47px;
+    }
+    .newsform .input-form input{
+        padding: 16px 68px;
+    }
+    .input-form img{
+        top: 16px;
+        left: 28px;
+        width: 20px;
+    }
+    .newsform form button{
+        padding: 16px 56px;
     }
     footer form{
         display: grid;
@@ -281,6 +526,9 @@
     footer form button p{
         font-size: 20px;
     }
+    footer form button img{
+        width: 24px;
+    }
     footer h3{
         color: #FFFFFF;
         font-size: 40px;
@@ -292,9 +540,25 @@
     .footercontent{
         flex-direction: column;
         align-items: normal;
-        gap: 100px;
+        gap: 68px;
     }
     .footcon-flex{
         justify-content: space-between;
+    }
+    .footcon{
+        display: grid;
+        gap: 16px;
+    }
+    .footcon p{
+        font-size: 15px;
+    }
+    .footercontent ul li a{
+        font-size: 18px;
+    }
+    .foot p{
+        font-size: 15px;
+    }
+    footer img{
+        width: 40px;
     }
 }
