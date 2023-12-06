@@ -238,11 +238,11 @@ button a{
         grid-template-columns: repeat(4, 1fr);
         gap: 8px;
         overflow-x: scroll;
-        width: 600px;
+        width: 800px;
         margin-top: 20px;
     }
     .signupcon{
-        width: 600px;
+        width: 800px;
         box-sizing: border-box;
         padding: 60px 80px;
         background: #ffffff36;
