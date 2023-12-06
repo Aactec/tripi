@@ -69,6 +69,11 @@ button{
     cursor: pointer;
 }
 
+button a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
 .btn button{
     padding: 8px 16px;
     color: #FFFFFF;
@@ -258,6 +263,10 @@ form[method=get] #subtn{
     padding-block: 16px 0;
     font-size: 34px;
     font-weight: 500;
+}
+
+.about #abobtn{
+    display: none;
 }
 
 .about-con{

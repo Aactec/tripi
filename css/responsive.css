@@ -386,6 +386,7 @@
     .aboutcon-flex{
         overflow-x: scroll;
         gap: 32px;
+        margin-top: 20px;
     }
     .aboutcon-flex::-webkit-scrollbar{
         display: none;
@@ -395,6 +396,21 @@
     }
     .about-con{
         width: 300px;
+    }
+    .about-con button{
+        display: none;
+    }
+    .about #abobtn{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 32px;
+        border-radius: 16px;
+        border: none;
+        outline: none;
+        background: #1D956A;
+        color: #FFFFFF;
+        gap: 16px;
     }
     .aboutcontext{
         width: 300px;
