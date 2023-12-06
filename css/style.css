@@ -240,11 +240,11 @@ form[method=get] #subtn{
     gap: 16px;
 }
 
-.aboutcon-flex img{
+.aboutcontext img{
     width: 360px;
 }
 
-.aboutcontext{
+.about-con{
     width: 360px;
 }
 

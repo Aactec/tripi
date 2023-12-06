@@ -390,10 +390,13 @@
     .aboutcon-flex::-webkit-scrollbar{
         display: none;
     }
-    .aboutcon-flex img{
+    .aboutcontext img{
         width: 300px;
     }
     .about-con{
+        width: 300px;
+    }
+    .aboutcontext{
         width: 300px;
     }
     .about{
