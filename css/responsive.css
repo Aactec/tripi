@@ -394,6 +394,12 @@
     .aboutcontext img{
         width: 300px;
     }
+    .aboutcontext h4{
+        font-size: 24px;
+    }
+    .aboutcontext p{
+        font-size: 14px;
+    }
     .about-con{
         width: 300px;
     }
