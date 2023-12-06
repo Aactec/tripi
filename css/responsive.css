@@ -3,6 +3,18 @@
     padding: 0;
 }
 
+/* @media (max-width: 2560px) {
+    .aboutcontext{
+        width: 700px;
+    }
+    .about-con{
+        width: 700px;
+    }
+    .aboutcon-flex img{
+        width: 700px;
+    }
+} */
+
 @media (max-width: 1024px) {
     .sponsor-logo{
         overflow-x: scroll;

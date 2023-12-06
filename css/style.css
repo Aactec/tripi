@@ -241,7 +241,11 @@ form[method=get] #subtn{
 }
 
 .aboutcon-flex img{
-    width: 366px;
+    width: 360px;
+}
+
+.aboutcontext{
+    width: 360px;
 }
 
 .aboutcontext p{
@@ -260,6 +264,7 @@ form[method=get] #subtn{
     display: flex;
     flex-direction: column;
     gap: 16px;
+    width: 360px;
 }
 
 .about-con button{
