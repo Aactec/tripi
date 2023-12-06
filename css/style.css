@@ -526,7 +526,7 @@ form[method=get] #subtn{
     align-items: center;
     justify-content: center;
     gap: 72px;
-    padding-top: 40px;
+    padding-top: 68px;
 }
 
 .reviewarrow img{
@@ -657,13 +657,15 @@ footer form button:nth-child(1){
     padding: 48px 0px;
     color: #FFFFFF;
     font-size: 40px;
+    border: none;
+    outline: none;
 }
 
 footer form button:nth-child(2), footer form button:nth-child(3){
     background: transparent;
     border: 1px solid #282828;
     border-radius: 100px;
-    padding: 40px 94px;
+    padding: 40px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -678,6 +680,7 @@ footer form button p{
 
 footer form button img{
     margin: 0;
+    width: 52px;
 }
 
 .footercontent{

@@ -57,7 +57,10 @@
         font-size: 20px;
     }
     nav{
-        gap: 24px;
+        display: none;
+    }
+    header img{
+        display: block;
     }
     form[method=get]{
         display: grid;
@@ -175,12 +178,12 @@
         margin-block: 52px;
     }
     .destinationcontent{
-        max-width: 368px;
+        width: 392px;
         padding: 14px;
         border-radius: 4px;
     }
     .destinationcontent img{
-        width: 288px;
+        width: 364px;
     }
     .desthead h4{
         font-size: 16px;
@@ -267,7 +270,7 @@
         width: 24px;
     }
     .newsform form button{
-        padding: 20px 56px;
+        padding: 20px 50px;
         font-size: 16px;
         width: 100%;
     }
@@ -377,29 +380,41 @@
         height: 20px;
     }
     .service{
+        width: 100%;
         padding-block: 48px 16px;
     }
+    .service h3{
+        width: 84%;
+        margin: auto;
+    }
     .servicecontent{
+        padding-inline: 20px;
         justify-content: space-between;
         gap: 1.5rem;
     }
+    .destination{
+        width: 100%;
+    }
     .destination h3{
+        width: 84%;
+        margin: auto;
         font-size: 16px;
     }
     .destgrid{
         gap: 16px;
         margin-block: 40px;
+        padding-inline: 12px;
     }
     .destgrid::-webkit-scrollbar{
         display: none;
     }
     .destinationcontent{
-        max-width: 260px;
+        max-width: 320px;
         padding: 12px;
         border-radius: 4px;
     }
     .destinationcontent img{
-        width: 216px;
+        width: 296px;
     }
     .desthead h4{
         font-size: 16px;
@@ -429,6 +444,7 @@
     .destarrow{
         gap: 40px;
         margin-top: 60px;
+        padding-inline: 40px;
     }
     .destarrow img{
         width: 40px;
@@ -440,7 +456,7 @@
         font-size: 16px;
     }
     .reviewcontent{
-        width: 280px;
+        width: 352px;
         padding: 20px;
     }
     .revhead .staricon svg{
@@ -468,7 +484,7 @@
         padding-block: 4px 16px;
     }
     .reviewarrow{
-        padding-top: 24px;
+        padding-top: 40px;
     }
     .reviewarrow img{
         width: 16px;
@@ -540,7 +556,8 @@
     .footercontent{
         flex-direction: column;
         align-items: normal;
-        gap: 68px;
+        gap: 40px;
+        margin-block: 40px;
     }
     .footcon-flex{
         justify-content: space-between;
@@ -560,5 +577,6 @@
     }
     footer img{
         width: 40px;
+        margin-bottom: 40px;
     }
 }
