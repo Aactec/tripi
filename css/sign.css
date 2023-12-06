@@ -14,7 +14,7 @@ main{
 }
 
 .signupcontent{
-    background-image: url(/image/signupimg.png);
+    background-image: url(../image/signupimg.png);
     background-position: center;
     background-size: cover;
 }
@@ -200,7 +200,7 @@ button a{
 
 
 .logincontent{
-    background-image: url(/image/loginimg.png);
+    background-image: url(../image/loginimg.png);
     background-position: center;
     background-size: cover;
 }
