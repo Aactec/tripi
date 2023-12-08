@@ -40,6 +40,10 @@ nav{
     gap: 180px;
 }
 
+nav svg{
+    display: none;
+}
+
 nav ul{
     display: flex;
     gap: 24px;
