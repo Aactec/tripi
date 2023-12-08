@@ -134,6 +134,9 @@ section{
     gap: 4px;
     /* width: 100%; */
 }
+.imagecarousel::-webkit-scrollbar{
+    display: none;
+}
 
 #arleft, #arright{
     cursor: pointer;
