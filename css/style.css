@@ -122,10 +122,23 @@ section{
     justify-content: space-between;
 }
 
+.imagecarousel{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    overflow-x: scroll;
+    width: 826px;
+    gap: 4px;
+    /* width: 100%; */
+}
+
+#arleft, #arright{
+    cursor: pointer;
+}
+
 .imagecarousel img{
     border-radius: 20px;
-    width: 100%;
-    max-width: 826px;
+    /* width: 100%; */
+    width: 826px;
 }
 
 form[method=get]{
@@ -456,11 +469,12 @@ form[method=get] #subtn{
     align-items: center;
     justify-content: left;
     gap: 60px;
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 .destarrow img{
     width: 60px;
+    cursor: pointer;
 }
 
 .review{
@@ -538,12 +552,13 @@ form[method=get] #subtn{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 72px;
+    gap: 120px;
     padding-top: 68px;
 }
 
 .reviewarrow img{
     width: 24px;
+    cursor: pointer;
 }
 
 .latestnews{
@@ -552,7 +567,7 @@ form[method=get] #subtn{
 
 .latestnews #plus-sign{
     position: absolute;
-    top: 388px;
+    top: 376px;
     right: 4px;
     float: right;
     width: 200px;

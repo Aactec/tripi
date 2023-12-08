@@ -12,10 +12,10 @@
     <body>
         <header>
             <div class="logo">
-                <img src="image/logo.png" alt="">
+                <a href="#"><img src="image/logo.png" alt=""></a>
                 <span>TRIPI</span>
             </div>
-            <nav>
+            <nav id="navLink">
                 <ul>
                     <li><a href="">About us</a></li>
                     <li><a href="">Destinations</a></li>
@@ -26,14 +26,20 @@
                     <button type="button"><a href="signup.html">Sign up</a></button>
                 </div>
             </nav>
-            <img src="image/menu.png" alt="menubar">
+            <img src="image/menu.png" alt="menubar" onclick="showMenu()">
         </header>
         <main>
             <section class="hero-section">
                 <h1><span>Travel,</span> enjoy and live a new and full <span>life</span></h1>
                 <div class="scrollimage">
-                    <img id="arleft" src="image/left-arrow.png" alt="">
+                    <img id="arleft" src="image/left-arrow.png" alt="" id="leftCarousel">
                     <div class="imagecarousel">
+                        <img src="image/countryimage.png" alt="">
+                        <img src="image/countryimage.png" alt="">
+                        <img src="image/countryimage.png" alt="">
+                        <img src="image/countryimage.png" alt="">
+                        <img src="image/countryimage.png" alt="">
+                        <img src="image/countryimage.png" alt="">
                         <img src="image/countryimage.png" alt="">
                     </div>
                     <img id="arright" src="image/right-arrow.png" alt="">
@@ -41,28 +47,28 @@
             </section>
             <form action="" method="get">
                 <div class="formcontent">
-                    <label for="">Location</label>
-                    <select name="" id="">
+                    <label for="location">Location</label>
+                    <select name="" id="" required aria-required="true">
                         <option value="">Nigeria</option>
                         <option value="">Ghana</option>
                         <option value="">South Africa</option>
                     </select>
                 </div>
                 <div class="formcontent">
-                    <label for="">Destination</label>
-                    <select name="" id="">
+                    <label for="destination">Destination</label>
+                    <select name="" id="" required aria-required="true">
                         <option value="">London, Uk</option>
                         <option value="">Lagos, nigeria</option>
                         <option value="">F.C.T, Nigeria</option>
                     </select>
                 </div>
                 <div class="formcontent">
-                    <label for="">Travel Date</label>
-                    <input type="date" name="" id="">
+                    <label for="date">Travel Date</label>
+                    <input type="date" name="" id="" required aria-required="true">
                 </div>
                 <div class="formcontent">
-                    <label for="">Person</label>
-                    <select name="" id="">
+                    <label for="Person">Person</label>
+                    <select name="" id="" required aria-required="true">
                         <option value="">01</option>
                         <option value="">02</option>
                         <option value="">03</option>
@@ -71,8 +77,8 @@
                     </select>
                 </div>
                 <div class="formcontent">
-                    <label for="">Include Ticket</label>
-                    <select name="" id="">
+                    <label for="ticket">Include Ticket</label>
+                    <select name="" id="" required aria-required="true">
                         <option value="">Flights</option>
                         <option value="">Flight, Hotels</option>
                         <option value="">Hotels</option>
@@ -402,8 +408,8 @@
                     </div>
                 </div>
                 <div class="destarrow">
-                    <img src="image/previous.png" alt="">
-                    <img src="image/next.png" alt="">
+                    <img src="image/previous.png" alt="" id="leftDest">
+                    <img src="image/next.png" alt="" id="rightDest">
                 </div>
             </section>
             <section class="review">
@@ -576,8 +582,8 @@
                     </div>
                 </div>
                 <div class="reviewarrow">
-                    <img src="image/chevron-down.png" alt="">
-                    <img src="image/chevron-do.png" alt="">
+                    <img src="image/chevron-down.png" alt="" id="leftArrow">
+                    <img src="image/chevron-do.png" alt="" id="rightArrow">
                 </div>
             </section>
             <section class="latestnews">
@@ -588,7 +594,7 @@
                         interesting offers about Tripi.</h3>
                     <form action="">
                         <div class="input-form">
-                            <input type="email" name="" id="" placeholder="Your Email">
+                            <input type="email" name="" id="" placeholder="Your Email" required aria-required="true">
                             <img src="image/envelope.png" alt="">
                         </div>
                         <button type="submit">Subscribe</button>
@@ -641,12 +647,13 @@
                         </ul>
                     </div>
                 </div>
-                <img src="image/footerlogo.png" alt="">
+                <a href="#"><img src="image/footerlogo.png" alt=""></a>
                 <div class="foot">
                     <p>All rights reserved.</p>
                     <p>2023 Tripi</p>
                 </div>
             </section>
         </footer>
+        <script src="index.js"></script>
     </body>
 </html>

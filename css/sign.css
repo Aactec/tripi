@@ -196,6 +196,14 @@ button a{
     width: 30px;
 }
 
+#backhome{
+    display: none;
+}
+
+#backhome img{
+    width: 32px;
+}
+
 
 
 
@@ -330,6 +338,7 @@ button a{
         width: 240px;
     }
     #footsignform{
+        flex-direction: column;
         margin: auto;
         width: 268px;
         margin-block: 16px;
@@ -348,5 +357,11 @@ button a{
     .line hr{
         width: 92px;
         margin: auto;
+    }
+    #backhome{
+        display: block;
+        position: fixed;
+        bottom: 32px;
+        right: 32px;
     }
 }

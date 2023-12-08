@@ -16,6 +16,19 @@
 } */
 
 @media (max-width: 1024px) {
+    nav{
+        gap: 64px;
+    }
+    .hero-section h1{
+        font-size: 80px;
+        line-height: 5rem;
+    }
+    .imagecarousel{
+        width: 520px;
+    }
+    .imagecarousel img{
+        width: 520px;
+    }
     .sponsor-logo{
         overflow-x: scroll;
     }
@@ -71,14 +84,39 @@
         
         height: 22px;
     }
-    .logo h1{
+    .logo span{
         font-size: 20px;
     }
     nav{
-        display: none;
+        position: absolute;
+        top: 0%;
+        display: block;
+        background: #7d7a7a;
+        right: -100%;
+        width: 100%;
+        padding: 40px 80px;
+        box-sizing: border-box;
+        transition: 0.5s;
+    }
+    nav ul{
+        background: transparent;
+        padding: 0px;
+        flex-direction: column;
+    }
+    .btn{
+        flex-direction: column;
+        margin-block-start: 40px;
+        align-items: normal;
+        width: 40%;
     }
     header img{
         display: block;
+    }
+    .imagecarousel{
+        width: 420px;
+    }
+    .imagecarousel img{
+        width: 420px;
     }
     form[method=get]{
         display: grid;
@@ -313,6 +351,9 @@
     footer form button img{
         width: 32px;
     }
+    footer img{
+        width: 56px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -321,9 +362,9 @@
         padding-block: 20px;
     }
     .hero-section h1{
-        font-size: 40px;
+        font-size: 24px;
         font-weight: 400;
-        line-height: 2.5rem;
+        line-height: 1.5rem;
         width: 86%;
         margin: auto;
     }
@@ -331,10 +372,16 @@
         width: 52px;
     }
     nav{
-        display: none;
+        padding: 40px 60px;
     }
     header img{
         display: block;
+    }
+    .imagecarousel{
+        width: 260px;
+    }
+    .imagecarousel img{
+        width: 260px;
     }
     form[method=get]{
         margin: auto;
@@ -491,7 +538,7 @@
         padding: 6px 16px;
     }
     .destarrow{
-        gap: 40px;
+        gap: 60px;
         margin-top: 60px;
         padding-inline: 40px;
     }
@@ -543,7 +590,7 @@
         width: 16px;
     }
     .latestnews #plus-sign{
-        top: 280px;
+        top: 252px;
         width: 114px;
     }
     .newsform{

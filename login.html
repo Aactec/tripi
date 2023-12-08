@@ -14,7 +14,7 @@
             <section class="logincontent">
                 <div class="signcontent">
                     <div class="helogo">
-                        <img src="image/signlogo.png" alt="">
+                        <a href="index.html"><img src="image/signlogo.png" alt=""></a>
                         <span>TRIPI</span>
                     </div>
                     <div class="signupcarousel">
@@ -51,12 +51,12 @@
                     <p>Login to your account</p>
                     <form action="">
                         <div class="input">
-                            <label for="">Email</label>
-                            <input type="email" name="" id="">
+                            <label for="email">Email</label>
+                            <input type="email" name="" id="" required aria-required="true">
                         </div>
                         <div class="pass">
-                            <label for="">Password</label>
-                            <input type="password" name="" id="">
+                            <label for="password">Password</label>
+                            <input type="password" name="" id="" required aria-required="true">
                         </div>
                         <button type="button">Sign up</button>
                     </form>
@@ -68,6 +68,7 @@
                     </span>
                 </div>
             </section>
+            <a id="backhome" href="index.html"><img src="./image/logo.png" alt=""></a>
         </main>
     </body>
 </html>
