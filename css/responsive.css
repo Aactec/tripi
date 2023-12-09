@@ -71,9 +71,6 @@
 }
 
 @media (max-width:840px) {
-    html, body{
-        overflow-x: hidden;
-    }
     .hero-section h1{
         font-size: 60px;
         font-weight: 400;
@@ -95,13 +92,13 @@
         top: 0%;
         display: block;
         background: #191919;
-        right: -100%;
+        right: 0%;
         width: 100%;
         padding: 40px 80px;
         box-sizing: border-box;
         z-index: 2;
+        display: none;
         transition: 0.5s;
-        overflow-x: hidden;
     }
     nav svg{
         display: block;

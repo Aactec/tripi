@@ -1,9 +1,9 @@
 const navLinks = document.getElementById("navLink");
 function showMenu() {
-    navLinks.style.right = "0%";
+    navLinks.style.display = "block";
 }
 function hideMenu() {
-    navLinks.style.right = "-100%";
+    navLinks.style.display = "none";
 }
 
 let scrollBody = document.querySelector(".revgrid");

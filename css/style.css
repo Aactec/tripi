@@ -132,7 +132,6 @@ section{
     overflow-x: scroll;
     width: 826px;
     gap: 4px;
-    /* width: 100%; */
 }
 .imagecarousel::-webkit-scrollbar{
     display: none;
@@ -144,7 +143,6 @@ section{
 
 .imagecarousel img{
     border-radius: 20px;
-    /* width: 100%; */
     width: 826px;
 }
 
