@@ -334,6 +334,8 @@ button a{
         display: flex;
         align-items: center;
         gap: 20px;
+        margin: 0 0 0 auto;
+        width: 252px;
     }
     #footsignform{
         flex-direction: column;
@@ -360,6 +362,10 @@ button a{
         display: block;
         position: fixed;
         bottom: 32px;
+        right: 32px;
+    }
+    .loginform #backhome{
+        bottom: 64px;
         right: 32px;
     }
 }
