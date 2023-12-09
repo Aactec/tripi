@@ -224,7 +224,7 @@ button a{
     align-items: center;
     gap: 32px;
     margin: 0 0 0 auto;
-    width: 302px;
+    width: 348px;
 }
 
 .logform #footsignform{
@@ -333,9 +333,7 @@ button a{
     .logform span{
         display: flex;
         align-items: center;
-        gap: 32px;
-        margin: 0 0 0 auto;
-        width: 240px;
+        gap: 20px;
     }
     #footsignform{
         flex-direction: column;
