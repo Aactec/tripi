@@ -100,7 +100,8 @@
         display: none;
         transition: 0.5s;
     }
-    nav svg{
+    nav img{
+        width: 24px;
         display: block;
         margin-block: 0px 60px;
     }
