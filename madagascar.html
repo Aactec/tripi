@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Tripi</title>
+        <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta property="title" content="Tripi Travel">
@@ -20,14 +20,14 @@
     <body>
         <header>
             <div class="logo">
-                <a href="#"><img src="image/logo.png" alt=""></a>
+                <a href="index.html"><img src="image/logo.png" alt=""></a>
                 <span>TRIPI</span>
             </div>
             <nav id="navLink">
                 <img src="image/close.png" alt="" onclick="hideMenu()">
                 <ul>
-                    <li><a href="#about">About us</a></li>
                     <li><a href="destination.html">Destinations</a></li>
+                    <li><a href="">Bookings</a></li>
                 </ul>
                 <div class="btn">
                     <button type="button"><a href="login.html">Log in</a></button>
@@ -37,159 +37,37 @@
             <img src="image/menu.png" alt="menubar" onclick="showMenu()">
         </header>
         <main>
-            <section class="hero-section">
-                <h1><span>Travel,</span> enjoy and live a new and full <span>life</span></h1>
-                <div class="scrollimage">
-                    <img id="arleft" src="image/left-arrow.png" alt="" id="leftCarousel">
-                    <div class="imagecarousel">
-                        <img src="image/countryimage.png" alt="">
-                        <img src="image/countryimage.png" alt="">
-                        <img src="image/countryimage.png" alt="">
-                        <img src="image/countryimage.png" alt="">
-                        <img src="image/countryimage.png" alt="">
-                        <img src="image/countryimage.png" alt="">
-                        <img src="image/countryimage.png" alt="">
-                    </div>
-                    <img id="arright" src="image/right-arrow.png" alt="">
+            <section id="countrycon">
+                <div class="countheading">
+                    <span>DESTINATION/</span>
+                    <h3>MADAGASCAR</h3>
                 </div>
-            </section>
-            <form action="" method="get">
-                <div class="formcontent">
-                    <label for="location">Location</label>
-                    <select name="" id="" required aria-required="true">
-                        <option value="">Nigeria</option>
-                        <option value="">Ghana</option>
-                        <option value="">South Africa</option>
-                    </select>
-                </div>
-                <div class="formcontent">
-                    <label for="destination">Destination</label>
-                    <select name="" id="" required aria-required="true">
-                        <option value="">London, Uk</option>
-                        <option value="">Lagos, nigeria</option>
-                        <option value="">F.C.T, Nigeria</option>
-                    </select>
-                </div>
-                <div class="formcontent">
-                    <label for="date">Travel Date</label>
-                    <input type="date" name="" id="" required aria-required="true">
-                </div>
-                <div class="formcontent">
-                    <label for="Person">Person</label>
-                    <select name="" id="" required aria-required="true">
-                        <option value="">01</option>
-                        <option value="">02</option>
-                        <option value="">03</option>
-                        <option value="">04</option>
-                        <option value="">05</option>
-                    </select>
-                </div>
-                <div class="formcontent">
-                    <label for="ticket">Include Ticket</label>
-                    <select name="" id="" required aria-required="true">
-                        <option value="">Flights</option>
-                        <option value="">Flight, Hotels</option>
-                        <option value="">Hotels</option>
-                    </select>
-                </div>
-                <button id="subtn">
-                    <p>Book</p>
-                    <svg width="22" height="22" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.16663 4.16663H7.79164C10.0416 4.16663 11.8125 6.10413 11.625 8.33329L9.89579 29.0833C9.60413 32.4791 12.2916 35.3958 15.7083 35.3958H37.8958C40.8958 35.3958 43.5208 32.9375 43.75 29.9583L44.8749 14.3333C45.1249 10.875 42.4999 8.06245 39.0208 8.06245H12.125" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M33.8542 45.8333C35.2924 45.8333 36.4583 44.6674 36.4583 43.2292C36.4583 41.7909 35.2924 40.625 33.8542 40.625C32.4159 40.625 31.25 41.7909 31.25 43.2292C31.25 44.6674 32.4159 45.8333 33.8542 45.8333Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M17.1875 45.8333C18.6258 45.8333 19.7917 44.6674 19.7917 43.2292C19.7917 41.7909 18.6258 40.625 17.1875 40.625C15.7493 40.625 14.5834 41.7909 14.5834 43.2292C14.5834 44.6674 15.7493 45.8333 17.1875 45.8333Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M18.75 16.6666H43.75" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </button>
-                <button type="submit">
-                    <svg width="32" height="32" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.16663 4.16663H7.79164C10.0416 4.16663 11.8125 6.10413 11.625 8.33329L9.89579 29.0833C9.60413 32.4791 12.2916 35.3958 15.7083 35.3958H37.8958C40.8958 35.3958 43.5208 32.9375 43.75 29.9583L44.8749 14.3333C45.1249 10.875 42.4999 8.06245 39.0208 8.06245H12.125" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M33.8542 45.8333C35.2924 45.8333 36.4583 44.6674 36.4583 43.2292C36.4583 41.7909 35.2924 40.625 33.8542 40.625C32.4159 40.625 31.25 41.7909 31.25 43.2292C31.25 44.6674 32.4159 45.8333 33.8542 45.8333Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M17.1875 45.8333C18.6258 45.8333 19.7917 44.6674 19.7917 43.2292C19.7917 41.7909 18.6258 40.625 17.1875 40.625C15.7493 40.625 14.5834 41.7909 14.5834 43.2292C14.5834 44.6674 15.7493 45.8333 17.1875 45.8333Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M18.75 16.6666H43.75" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </button>
-            </form>
-            <section class="sponsor-logo">
-                <img src="image/tripadvisor.png" alt="" >
-                <img src="image/tripadvisor2.png" alt="" >
-                <img src="image/tripadvisor3.png" alt="" >
-                <img src="image/tripadvisor4.png" alt="" >
-                <img src="image/tripadvisor5.png" alt="" >
-            </section>
-            <section class="about" id="about">
-                <h3>About Tripi</h3>
-                <p>At Tripi, <svg  width="40" height="40" viewBox="0 0 66 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M30.1561 10.7872L22.0051 2.707L0.0852051 24.0993V39.8994L0.142455 39.955L30.1561 10.7872ZM13.8496 31.9996L21.9992 24.0457L41.0147 42.6045L32.8652 50.5583L13.8496 31.9996ZM41.0235 63.9441L11.1379 34.6514L2.85882 42.6066L24.7778 64H40.9663L41.0235 63.9441ZM24.7217 0.055625L54.608 29.3491L62.8872 21.3943L40.9682 0H24.7787L24.7217 0.055625ZM24.717 21.3956L32.8666 13.4417L51.8823 32.0006L43.7327 39.9545L24.717 21.3956ZM43.7401 61.2928L65.6603 39.8991V23.9905L35.5894 53.2127L43.7401 61.2928ZM65.6603 64V45.2019L46.3995 64H65.6603ZM0.0852051 45.2021V64H19.3445L0.0852051 45.2021ZM65.6038 18.7429L65.6603 18.6877V0H46.4012L65.6038 18.7429ZM0.0852051 0V18.7968L19.3454 0H0.0852051Z" fill="#1D956A"/>
-                    </svg> we are your ultimate travel <span>companion</span> in exploring the world's wonders! At Tripi, we believe that travel is not just about reaching destinations; it's about embarking on unforgettable <span>journeys</span> , discovering new cultures, and creating lasting memories.
-                </p>
-                <button id="abobtn" type="button">
-                    <span>LEARN MORE</span>
-                    <svg width="32" height="32" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M21.9998 40.3333C32.1251 40.3333 40.3332 32.1252 40.3332 22C40.3332 11.8747 32.1251 3.66663 21.9998 3.66663C11.8746 3.66663 3.6665 11.8747 3.6665 22C3.6665 32.1252 11.8746 40.3333 21.9998 40.3333Z" fill="#111111"/>
-                        <path d="M19.69 28.4716L26.1433 21.9999L19.69 15.5283" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </button>
-                <div class="aboutcon-flex">
-                    <div class="about-con">
-                        <button type="button">
-                            <span>LEARN MORE</span>
-                            <svg width="32" height="32" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M21.9998 40.3333C32.1251 40.3333 40.3332 32.1252 40.3332 22C40.3332 11.8747 32.1251 3.66663 21.9998 3.66663C11.8746 3.66663 3.6665 11.8747 3.6665 22C3.6665 32.1252 11.8746 40.3333 21.9998 40.3333Z" fill="#111111"/>
-                                <path d="M19.69 28.4716L26.1433 21.9999L19.69 15.5283" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </button>
-                        <div class="aboutcontext">
-                            <img src="image/Frame 8.png" alt="">
-                            <h4>Our Passion For Travel</h4>
-                            <p>At Tripi, our passion fuels exploration. Join us in unlocking the world'swonders.</p>
+                <div class="countrycontent">
+                    <div class="count">
+                        <div class="countext">
+                            <p>Overview</p>
+                            <p>Botswana, nestled in Southern Africa, captivates visitors with its expansive wilderness, remarkable landscapes, and diverse wildlife.</p>
+                        </div>
+                        <div class="countext">
+                            <p>Cultural
+                                Highlights</p>
+                            <p>Rich tribal cultures, notably the Tswana people, celebrate vibrant traditions, music, dance, and arts. The Setswana language, widely spoken, reflects the country's cultural heritage.</p>
+                        </div>
+                        <div class="countext">
+                            <p>Natural
+                                Beauty</p>
+                            <p>Okavango Delta, Chobe National Park Kalahari desert and etc</p>
                         </div>
                     </div>
-                    <div class="aboutcontext">
-                        <img src="image/Frame 7.png" alt="">
-                        <h4>Tailored Experiences</h4>
-                        <p>Discover personalized itineraries with Tripi for seamless, worry-freetravels.</p>
-                    </div>
-                    <div class="aboutcontext">
-                        <img src="image/Frame 9.png" alt="">
-                        <h4>Inspiring Journeys</h4>
-                        <p>Let Tripi guide you to unforgettable destinations, creating cherished memories<p>
-                    </div>
-                </div>
-            </section>
-            <section class="service">
-                <h3>Services</h3>
-                <div class="servicecol">
-                    <div class="servicecontent">
-                        <span>01</span>
-                        <div class="service-text">
-                            <p>Calculated Weather</p>
-                            <p>Whatever time you book, whatever day, we got you covered 24/7, our service is</p>
-                        </div>
-                    </div>
-                    <div class="servicecontent">
-                        <span>02</span>
-                        <div class="service-text">
-                            <p>Customization</p>
-                            <p>You have the opportunity to make bookings as you like, anytime you want.</p>
-                        </div>
-                    </div>
-                    <div class="servicecontent">
-                        <span>03</span>
-                        <div class="service-text">
-                            <p>Hotel reservations</p>
-                            <p>You got to your destination, and you're very much exhausted, Tripi got you!</p>
-                        </div>
-                    </div>
+                    <img src="./image/madagascar.png" alt="">
                 </div>
             </section>
             <section class="destination">
-                <h3>Destinations</h3>
                 <div class="destgrid">
                     <div class="destinationcontent">
                         <img src="image/rome.png" alt="">
                         <div class="desthead">
-                            <h4>Rome, Italy</h4>
+                            <h4>Okavango Delta Safari</h4>
                             <div class="star">
                                 <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_37_317)">
@@ -265,7 +143,7 @@
                     <div class="destinationcontent">
                         <img src="image/shangai.png" alt="">
                         <div class="desthead">
-                            <h4>Shangai, Japan</h4>
+                            <h4>Moremi Game Reserve</h4>
                             <div class="star">
                                 <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_37_317)">
@@ -341,7 +219,7 @@
                     <div class="destinationcontent">
                         <img src="image/singapore.png" alt="">
                         <div class="desthead">
-                            <h4>Singapore</h4>
+                            <h4>Okavango Safari</h4>
                             <div class="star">
                                 <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_37_317)">
@@ -415,198 +293,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="destarrow">
-                    <img src="image/previous.png" alt="" id="leftDest">
-                    <img src="image/next.png" alt="" id="rightDest">
-                </div>
-            </section>
-            <section class="review">
-                <h3>What Our Clients Say About Us</h3>
-                <div class="revgrid">
-                    <div class="reviewcontent">
-                        <div class="revhead">
-                            <div class="clientdetails">
-                                <img src="image/client.png" alt="">
-                                <span>
-                                    <h4>Leo</h4>
-                                    <p>Lead Designer</p>
-                                </span>
-                            </div>
-                            <div class="staricon">
-                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_37_317)">
-                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
-                                    </g>
-                                    <clipPath id="clip0_37_317">
-                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
-                                    </clipPath>
-                                </svg>
-                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_37_317)">
-                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
-                                    </g>
-                                    <clipPath id="clip0_37_317">
-                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
-                                    </clipPath>
-                                </svg>
-                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_37_317)">
-                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
-                                    </g>
-                                    <clipPath id="clip0_37_317">
-                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
-                                    </clipPath>
-                                </svg>
-                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_37_317)">
-                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
-                                    </g>
-                                    <clipPath id="clip0_37_317">
-                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
-                                    </clipPath>
-                                </svg>
-                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_37_329)">
-                                    <path d="M10.3875 14.2495L9.99996 14.0156L9.61241 14.2495L5.98273 16.4402L6.94296 12.3115L7.04544 11.8709L6.7035 11.5747L3.49884 8.79892L7.72273 8.43469L8.17248 8.3959L8.34875 7.98032L9.99996 4.08735L11.6512 7.98032L11.8274 8.3959L12.2772 8.43469L16.5011 8.79892L13.2964 11.5747L12.9545 11.8709L13.057 12.3115L14.0172 16.4402L10.3875 14.2495Z" stroke="#E2A710" stroke-width="1.5"/>
-                                    </g>
-                                    <clipPath id="clip0_37_329">
-                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
-                                    </clipPath>
-                                </svg>
-                            </div>
-                        </div>
-                        <h5>It was a very good experience</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.</p>
-                    </div>
-                    <div class="reviewcontent">
-                        <div class="revhead">
-                            <div class="clientdetails">
-                                <img src="image/client.png" alt="">
-                                <span>
-                                    <h4>Leo</h4>
-                                    <p>Lead Designer</p>
-                                </span>
-                            </div>
-                            <div class="staricon">
-                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_37_317)">
-                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
-                                    </g>
-                                    <clipPath id="clip0_37_317">
-                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
-                                    </clipPath>
-                                </svg>
-                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_37_317)">
-                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
-                                    </g>
-                                    <clipPath id="clip0_37_317">
-                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
-                                    </clipPath>
-                                </svg>
-                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_37_317)">
-                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
-                                    </g>
-                                    <clipPath id="clip0_37_317">
-                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
-                                    </clipPath>
-                                </svg>
-                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_37_317)">
-                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
-                                    </g>
-                                    <clipPath id="clip0_37_317">
-                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
-                                    </clipPath>
-                                </svg>
-                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_37_329)">
-                                    <path d="M10.3875 14.2495L9.99996 14.0156L9.61241 14.2495L5.98273 16.4402L6.94296 12.3115L7.04544 11.8709L6.7035 11.5747L3.49884 8.79892L7.72273 8.43469L8.17248 8.3959L8.34875 7.98032L9.99996 4.08735L11.6512 7.98032L11.8274 8.3959L12.2772 8.43469L16.5011 8.79892L13.2964 11.5747L12.9545 11.8709L13.057 12.3115L14.0172 16.4402L10.3875 14.2495Z" stroke="#E2A710" stroke-width="1.5"/>
-                                    </g>
-                                    <clipPath id="clip0_37_329">
-                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
-                                    </clipPath>
-                                </svg>
-                            </div>
-                        </div>
-                        <h5>It was a very good experience</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.</p>
-                    </div>
-                    <div class="reviewcontent">
-                        <div class="revhead">
-                            <div class="clientdetails">
-                                <img src="image/client.png" alt="">
-                                <span>
-                                    <h4>Leo</h4>
-                                    <p>Lead Designer</p>
-                                </span>
-                            </div>
-                            <div class="staricon">
-                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_37_317)">
-                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
-                                    </g>
-                                    <clipPath id="clip0_37_317">
-                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
-                                    </clipPath>
-                                </svg>
-                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_37_317)">
-                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
-                                    </g>
-                                    <clipPath id="clip0_37_317">
-                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
-                                    </clipPath>
-                                </svg>
-                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_37_317)">
-                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
-                                    </g>
-                                    <clipPath id="clip0_37_317">
-                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
-                                    </clipPath>
-                                </svg>
-                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_37_317)">
-                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
-                                    </g>
-                                    <clipPath id="clip0_37_317">
-                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
-                                    </clipPath>
-                                </svg>
-                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_37_329)">
-                                    <path d="M10.3875 14.2495L9.99996 14.0156L9.61241 14.2495L5.98273 16.4402L6.94296 12.3115L7.04544 11.8709L6.7035 11.5747L3.49884 8.79892L7.72273 8.43469L8.17248 8.3959L8.34875 7.98032L9.99996 4.08735L11.6512 7.98032L11.8274 8.3959L12.2772 8.43469L16.5011 8.79892L13.2964 11.5747L12.9545 11.8709L13.057 12.3115L14.0172 16.4402L10.3875 14.2495Z" stroke="#E2A710" stroke-width="1.5"/>
-                                    </g>
-                                    <clipPath id="clip0_37_329">
-                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
-                                    </clipPath>
-                                </svg>
-                            </div>
-                        </div>
-                        <h5>It was a very good experience</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.</p>
-                    </div>
-                </div>
-                <div class="reviewarrow">
-                    <img src="image/chevron-down.png" alt="" id="leftArrow">
-                    <img src="image/chevron-do.png" alt="" id="rightArrow">
-                </div>
-            </section>
-            <section class="latestnews">
-                <img id="plus-sign" src="image/Group 5.png" alt="">
-                <div class="newsform">
-                    <img id="plane" src="image/plane.png" alt="">
-                    <h3>Subscribe to get information, latest news and other
-                        interesting offers about Tripi.</h3>
-                    <form action="">
-                        <div class="input-form">
-                            <input type="email" name="" id="" placeholder="Your Email" required aria-required="true">
-                            <img src="image/envelope.png" alt="">
-                        </div>
-                        <button type="submit">Subscribe</button>
-                    </form>
+                <div class="destbtn">
+                    <button type="submit">Proceed to Booking</button>
                 </div>
             </section>
         </main>

@@ -52,7 +52,7 @@ nav ul{
     display: flex;
     gap: 24px;
     background: #191919;
-    padding: 16px 28px;
+    padding: 10px 20px;
     border-radius: 4px;
 }
 
@@ -391,7 +391,7 @@ form[method=get] #subtn{
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     overflow-x: scroll;
-    margin-block: 72px;
+    margin-block: 60px;
 }
 
 .destgrid::-webkit-scrollbar{
@@ -667,6 +667,11 @@ footer{
 .footlogo{
     display: grid;
     place-content: center;
+    margin-block: 20px;
+}
+
+.footlogo img{
+    margin: 0;
 }
 
 footer h3{
@@ -774,4 +779,122 @@ footer img{
 .foot p{
     font-size: 24px;
     font-weight: 400;
+}
+
+
+/* -------------------------------------Destination------------------------------------- */
+#dest{
+    width: 84%;
+    margin: auto;
+    font-family: 'Satoshi', sans-serif;
+    margin-block: 40px 80px;
+}
+
+#dest .destheading span{
+    color: #1D956A;
+}
+
+#dest .destheading h1{
+    color: #FAFAFA;
+}
+
+#dest p{
+    color: #FAFAFA;
+}
+
+.destinationgrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 60px;
+}
+
+.destcountry{
+    width: 100%;
+    max-width: 360px;
+    text-align: center;
+}
+
+.destcountry img{
+    width: 100%;
+    max-width: 360px;
+}
+
+.destcountry h3{
+    color: #FAFAFA;
+}
+
+.destcountry p{
+    color: #FAFAFA;
+}
+
+
+/* ---------------------------------Country----------------------------------- */
+#countrycon{
+    width: 84%;
+    margin: auto;
+    font-family: 'Satoshi', sans-serif;
+    margin-top: 40px;
+}
+
+.countheading span{
+    color: #1D956A;
+}
+
+.countheading h3{
+    color: #FAFAFA;
+}
+
+.countrycontent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block: 60px 0px;
+}
+
+.count{
+    display: grid;
+    gap: 20px;
+}
+
+.countext{
+    display: flex;
+    align-items: start;
+    gap: 24px;
+    color: #FAFAFA;
+}
+
+.countext p:nth-child(1){
+    flex-basis: 12%;
+}
+
+.countext p:nth-child(2){
+    flex-basis: 70%;
+    border-bottom: 1px solid #D9D9D9;
+    padding-bottom: 28px;
+}
+
+.countrycontent img{
+    max-width: 648px;
+    width: 100%;
+}
+
+.destbtn{
+    display: flex;
+    justify-content: center;
+}
+
+.destbtn button{
+    background: #1D956A;
+    padding: 12px 40px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: #FFFFFF;
+}
+
+/* -------------------------------------------User------------------------------------------------ */
+#usercontent{
+    display: flex;
+    align-items: center;
 }
