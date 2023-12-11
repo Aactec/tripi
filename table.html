@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Booking Table</h2>
+    <table id="bookingTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Phone no</th>
+                <th>Address details</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script>
+        // Add a booking
+        function addBooking(id, fullName, email, phoneNo, addressDetails) {
+            const table = document.getElementById('bookingTable');
+            const row = table.insertRow(-1);
+
+            row.insertCell(0).innerHTML = id;
+            row.insertCell(1).innerHTML = fullName;
+            row.insertCell(2).innerHTML = email;
+            row.insertCell(3).innerHTML = phoneNo;
+            row.insertCell(4).innerHTML = addressDetails;
+            row.insertCell(5).innerHTML = `<button onclick="deleteBooking(this)">Delete</button>`;
+        }
+
+        // Delete a booking
+        function deleteBooking(row) {
+            const table = document.getElementById('bookingTable');
+            table.deleteRow(row.parentNode.rowIndex);
+        }
+
+        // Example usage
+        // addBooking(1, 'John Doe', 'john.doe@example.com', '+1 234 567 890', '1234 Example Street, New York, NY 12345');
+        // addBooking(2, 'Jane Smith', 'jane.smith@example.com', '+1 987 654 321', '5678 Another Street, Los Angeles, CA 98765');
+    </script>
+</body>
+</html>

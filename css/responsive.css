@@ -70,6 +70,7 @@
     }
         /* ---------------------------------Country----------------------------------- */
         .countrycontent{
+            display: flex;
             flex-direction: column-reverse;
             align-items: normal;
             gap: 36px;
@@ -84,6 +85,14 @@
             border-bottom: 1px solid #D9D9D9;
             padding-bottom: 28px;
         }
+/* 
+        .bookinggrid{
+            display: grid;
+            grid-template-columns: auto;
+            place-items: center;
+            gap: 40px;
+            margin-block-start: 20px;
+        } */
 }
 
 
@@ -402,6 +411,16 @@
     /* ---------------------------------Country----------------------------------- */
     .destbtn button{
         padding: 12px 32px;
+    }
+    .bookinggrid{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 32px;
+    }
+    .bookcontent > img{
+        top: -1.8%;
+        left: 48%;
+        width: 40px;
     }
 }
 
@@ -738,10 +757,24 @@
     .destcountry, .destcountry img{
         width: 268px;
     }
+    .dest .destheading h1{
+        font-size: 36px;
+        line-height: 2rem;
+        margin-bottom: 20px;
+    }
+    .dest p{
+        font-size: 20px;
+        width: 80%;
+        margin: auto;
+    }
     /* ---------------------------------Country----------------------------------- */
     .countext{
         flex-direction: column;
         gap: 8px;
+    }
+    .countheading h3{
+        font-size: 36px;
+        line-height: 2rem;
     }
     .countext p:nth-child(1){
         flex-basis: 100%;

@@ -417,7 +417,7 @@ form[method=get] #subtn{
 }
 
 .desthead h4{
-    font-size: 34px;
+    font-size: 28px;
     font-weight: 500;
     color: #E6EAEE;
 }
@@ -783,23 +783,32 @@ footer img{
 
 
 /* -------------------------------------Destination------------------------------------- */
-#dest{
+.dest{
     width: 84%;
     margin: auto;
     font-family: 'Satoshi', sans-serif;
     margin-block: 40px 80px;
+    text-align: center;
 }
 
-#dest .destheading span{
+.dest .destheading span{
     color: #1D956A;
 }
 
-#dest .destheading h1{
+.dest .destheading h1{
     color: #FAFAFA;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 3rem;
+    margin-bottom: 32px;
 }
 
-#dest p{
-    color: #FAFAFA;
+.dest p{
+    color: #B3B3B3;
+    font-size: 28px;
+    font-weight: 400;
+    width: 55%;
+    margin: auto;
 }
 
 .destinationgrid{
@@ -810,6 +819,7 @@ footer img{
 }
 
 .destcountry{
+    position: relative;
     width: 100%;
     max-width: 360px;
     text-align: center;
@@ -821,11 +831,57 @@ footer img{
 }
 
 .destcountry h3{
-    color: #FAFAFA;
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: 500;
 }
 
 .destcountry p{
-    color: #FAFAFA;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layerbg p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #1D956A;
+    padding: 40px 0px;
+    background: #FFFFFF;
+    width: 140px;
+    height: 140px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 400px;
+}
+
+.layer:hover{
+    background: rgba(0, 255, 255, 0.205);
+}
+.layerbg{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 100%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 45%;
+    opacity: 1;
 }
 
 
@@ -842,13 +898,17 @@ footer img{
 }
 
 .countheading h3{
-    color: #FAFAFA;
+    color: #FFFFFF;
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 3rem;
 }
 
 .countrycontent{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
     margin-block: 60px 0px;
 }
 
@@ -861,17 +921,19 @@ footer img{
     display: flex;
     align-items: start;
     gap: 24px;
-    color: #FAFAFA;
+    color: #FFFFFF;
 }
 
 .countext p:nth-child(1){
-    flex-basis: 12%;
+    flex-basis: 15%;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .countext p:nth-child(2){
     flex-basis: 70%;
-    border-bottom: 1px solid #D9D9D9;
-    padding-bottom: 28px;
+    border-bottom: 1px solid #808080;
+    padding-bottom: 24px;
 }
 
 .countrycontent img{
@@ -893,8 +955,167 @@ footer img{
     color: #FFFFFF;
 }
 
+/* ---------------------------Booking modal------------------------ */
+.booking{
+    display: none;
+    position: absolute;
+    left: 5%;
+    top: 70%;
+    background: #111111;
+    width: 90%;
+    border-radius: 4px;
+}
+
+.booking .bookcontent{
+    width: 90%;
+    margin: auto;
+    padding-block: 32px;
+    position: relative;
+}
+
+.bookcontent > img{
+    position: absolute;
+    top: -4%;
+    left: 50%;
+    width: 60px;
+}
+
+.booking span{
+    color: #1D956A;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.bookinggrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 40px;
+    margin-block-start: 20px;
+}
+
+.bookinggrid #morocco{
+    width: 100%;
+    max-width: 640px;
+    height: 612px;
+}
+
+.bookingform form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.bookingform form label{
+    width: 70%;
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.bookingform form input{
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #808080;
+    padding: 12px;
+    width: 320px;
+}
+
+::placeholder{
+    color: #808080;
+}
+
+.traveldetails form{
+    margin-block: 16px;
+}
+
+.traveldetails{
+    margin-block: 20px;
+}
+
+.traveldetails h4{
+    font-size: 24px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.traveldetails form select{
+    padding: 8px;
+    border-radius: 20px;
+    background: #191919;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+}
+
+.traveldetails form textarea{
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #808080;
+    padding: 8px;
+}
+
+.checkout{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkout p{
+    color: #1D956A;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.checkout button{
+    background: #1D956A;
+    padding: 12px 20px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+}
+
 /* -------------------------------------------User------------------------------------------------ */
-#usercontent{
+.user{
     display: flex;
     align-items: center;
+    gap: 24px;
+    background: #1D956A;
+    padding: 6px;
+    border-radius: 50px;
+}
+
+.user img{
+    display: block;
+}
+
+.user img:nth-child(1){
+    width: 32px;
+}
+
+.user img:nth-child(2){
+    width: 16px;
+    padding-inline: 8px;
+}
+
+#usercontent{
+    display: flex;
+    /* align-items: center; */
+}
+
+aside{
+    background: #191919;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+thead{
+    background: #1D956A;
 }
