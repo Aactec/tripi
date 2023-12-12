@@ -2,6 +2,8 @@ const navLinks = document.getElementById("navLink");
 
 let modal = document.getElementById("bookings");
 
+let nav = document.getElementById("aside")
+
 const heroSection = document.querySelector('.hero-section'),
 heroScrollDiv = heroSection.querySelector('.scrollimage'),
 heroControlRight =  heroSection.querySelector('#arright'),
@@ -81,4 +83,11 @@ function openModal() {
 
 function closeModal() {
     modal.classList.remove("open");
+}
+
+function showItems() {
+    nav.style.display = "block";
+}
+function closeItems() {
+    nav.style.display = "none";
 }

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="title" content="Tripi Travel">
+        <meta name="description" content="Tripi Travel provides you with ultimate travel companion in exploring the word wonder!At Tripi, we believe that travel is not just about reaching destinations; it's about embarking on unforgettable journeys, discovering new cultures, and creating lasting memories.">
+        <meta name="author" content="B.d.d Squad">
+        <meta name="keywords" content="Trave Website">
+        <meta name="keywords" content="Trave App">
+        <meta name="keywords" content="Trave Web-App">
+        <meta property="image" content="image/logo.png">
+        <meta property="og:image" content="image/logo.png">
+        <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+        <link href="https://api.fontshare.com/v2/css?f[]=trench-slab@600&display=swap" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="#"><img src="image/logo.png" alt=""></a>
+                <span>TRIPI</span>
+            </div>
+            <div style="display: flex; gap: 16px; align-items: center;">
+                <div class="user">
+                    <img src="./image/userimg.png" alt="">
+                    <img src="./image/arrow-down.png" alt="">
+                </div>
+                <img src="image/menu.png" alt="menubar" onclick="showItems()">
+            </div>
+        </header>
+        <main id="usercontent">
+            <aside id="aside">
+                <img src="./image/close.png" alt="" onclick="closeItems()">
+                <ul>
+                    <li><a href="mybooking.html">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.29901 24.0486L11.9634 21.8072C12.3637 21.4642 13.0269 21.4642 13.4272 21.8072L16.0916 24.0486C16.7091 24.3573 17.4638 24.0486 17.6925 23.3853L18.1957 21.8644C18.3215 21.4985 18.1957 20.961 17.9212 20.6866L15.3254 18.0793C15.131 17.8964 14.9824 17.5304 14.9824 17.2674V14.0084C14.9824 13.5281 15.3368 13.2994 15.7828 13.4823L21.3976 15.9066C22.2781 16.284 22.9985 15.8151 22.9985 14.8546V13.3794C22.9985 12.6133 22.4267 11.7327 21.7177 11.4354L15.3254 8.67951C15.1424 8.59947 14.9824 8.35933 14.9824 8.15349V4.7229C14.9824 3.64798 14.1933 2.37867 13.2328 1.88695C12.8897 1.71542 12.4895 1.71542 12.1464 1.88695C11.1858 2.37867 10.3968 3.65942 10.3968 4.73434V8.16493C10.3968 8.37076 10.2367 8.6109 10.0537 8.69095L3.67284 11.4469C2.96385 11.7327 2.39209 12.6133 2.39209 13.3794V14.8546C2.39209 15.8151 3.11251 16.284 3.99303 15.9066L9.60776 13.4823C10.0423 13.2879 10.4082 13.5281 10.4082 14.0084V17.2674C10.4082 17.5304 10.2596 17.8964 10.0766 18.0793L7.4808 20.6866C7.20635 20.961 7.08056 21.487 7.20635 21.8644L7.7095 23.3853C7.91534 24.0486 8.67007 24.3687 9.29901 24.0486Z" stroke="#1D956A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                        <p>My Bookings</p></a>
+                    </li>
+                    <li><a href="destination.html">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 7.17371H21" stroke="#1D956A" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M6 12.1737H18" stroke="#1D956A" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M10 17.1737H14" stroke="#1D956A" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>                            
+                        <p>Bookings</p></a>
+                    </li>
+                    <li><a href="#">
+                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.62 18.9837C11.28 19.1037 10.72 19.1037 10.38 18.9837C7.48 17.9937 1 13.8637 1 6.86368C1 3.77368 3.49 1.27368 6.56 1.27368C8.38 1.27368 9.99 2.15368 11 3.51368C12.01 2.15368 13.63 1.27368 15.44 1.27368C18.51 1.27368 21 3.77368 21 6.86368C21 13.8637 14.52 17.9937 11.62 18.9837Z" stroke="#1D956A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                        <p>Favorite</p></a>
+                    </li>
+                    <li><a href="#">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.5 19.1737H8C4 19.1737 2 18.1737 2 13.1737V8.17371C2 4.17371 4 2.17371 8 2.17371H16C20 2.17371 22 4.17371 22 8.17371V13.1737C22 17.1737 20 19.1737 16 19.1737H15.5C15.19 19.1737 14.89 19.3237 14.7 19.5737L13.2 21.5737C12.54 22.4537 11.46 22.4537 10.8 21.5737L9.3 19.5737C9.14 19.3537 8.77 19.1737 8.5 19.1737Z" stroke="#1D956A" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15.9965 11.1737H16.0054" stroke="#1D956A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11.9955 11.1737H12.0045" stroke="#1D956A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7.99451 11.1737H8.00349" stroke="#1D956A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                        <p>Messages</p></a>
+                    </li>
+                    <li><a href="profile.html">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.1202 12.9537C12.0502 12.9437 11.9602 12.9437 11.8802 12.9537C10.1202 12.8937 8.72021 11.4537 8.72021 9.68369C8.72021 7.87369 10.1802 6.40369 12.0002 6.40369C13.8102 6.40369 15.2802 7.87369 15.2802 9.68369C15.2702 11.4537 13.8802 12.8937 12.1202 12.9537Z" stroke="#1D956A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18.7398 19.5538C16.9598 21.1838 14.5998 22.1738 11.9998 22.1738C9.39977 22.1738 7.03977 21.1838 5.25977 19.5538C5.35977 18.6138 5.95977 17.6938 7.02977 16.9738C9.76977 15.1538 14.2498 15.1538 16.9698 16.9738C18.0398 17.6938 18.6398 18.6138 18.7398 19.5538Z" stroke="#1D956A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 22.1737C17.5228 22.1737 22 17.6966 22 12.1737C22 6.65086 17.5228 2.17371 12 2.17371C6.47715 2.17371 2 6.65086 2 12.1737C2 17.6966 6.47715 22.1737 12 22.1737Z" stroke="#1D956A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                        <p>My Profile</p></a>
+                    </li>
+                    <a href="index.html">
+                        <img src="./image/signout.png" alt="">
+                        <p>Sign out</p>
+                    </a>
+                </ul>
+            </aside>
+            <section id="table">
+                <table id="bookingTable">
+                    <thead>
+                        <tr>
+                            <th>My Bookings</th>
+                            <th>Status</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th>Guests</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="./image/kenya.png" alt="">
+                                <div>
+                                    <span>ID: #4455</span>
+                                    <h4>Kenya</h4>
+                                    <p>N 1,200,00.00</p>
+                                </div>
+                            </td>
+                            <td>Ongoing</td>
+                            <td>1.12.2023</td>
+                            <td>4.2.2024</td>
+                            <td>5 Guests</td>
+                            <td>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.9833 10.5001C12.9833 12.1501 11.6499 13.4834 9.99993 13.4834C8.34993 13.4834 7.0166 12.1501 7.0166 10.5001C7.0166 8.85006 8.34993 7.51672 9.99993 7.51672C11.6499 7.51672 12.9833 8.85006 12.9833 10.5001Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.99987 17.3916C12.9415 17.3916 15.6832 15.6583 17.5915 12.6583C18.3415 11.4833 18.3415 9.50831 17.5915 8.33331C15.6832 5.33331 12.9415 3.59998 9.99987 3.59998C7.0582 3.59998 4.31654 5.33331 2.4082 8.33331C1.6582 9.50831 1.6582 11.4833 2.4082 12.6583C4.31654 15.6583 7.0582 17.3916 9.99987 17.3916Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.0004 11.6916C11.4363 11.6916 12.6004 10.5275 12.6004 9.09158C12.6004 7.65564 11.4363 6.49158 10.0004 6.49158C8.56445 6.49158 7.40039 7.65564 7.40039 9.09158C7.40039 10.5275 8.56445 11.6916 10.0004 11.6916Z" stroke="white" stroke-width="1.5"/>
+                                    <path d="M3.01675 7.57496C4.65842 0.358295 15.3501 0.366628 16.9834 7.58329C17.9418 11.8166 15.3084 15.4 13.0001 17.6166C11.3251 19.2333 8.67508 19.2333 6.99175 17.6166C4.69175 15.4 2.05842 11.8083 3.01675 7.57496Z" stroke="white" stroke-width="1.5"/>
+                                </svg>                                    
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.6">
+                                    <path d="M17.5 5.48332C14.725 5.20832 11.9333 5.06665 9.15 5.06665C7.5 5.06665 5.85 5.14998 4.2 5.31665L2.5 5.48332" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.08301 4.64163L7.26634 3.54996C7.39967 2.75829 7.49967 2.16663 8.90801 2.16663H11.0913C12.4997 2.16663 12.608 2.79163 12.733 3.55829L12.9163 4.64163" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.7087 8.1167L15.167 16.5084C15.0753 17.8167 15.0003 18.8334 12.6753 18.8334H7.32533C5.00033 18.8334 4.92533 17.8167 4.83366 16.5084L4.29199 8.1167" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.6084 14.25H11.3834" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.91699 10.9166H12.0837" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                                <a href="journal.html">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.3337 14.45V4.39162C18.3337 3.39162 17.517 2.64995 16.5253 2.73329H16.4753C14.7253 2.88329 12.067 3.77495 10.5837 4.70829L10.442 4.79995C10.2003 4.94995 9.80033 4.94995 9.55866 4.79995L9.35033 4.67495C7.86699 3.74995 5.21699 2.86662 3.46699 2.72495C2.47533 2.64162 1.66699 3.39162 1.66699 4.38329V14.45C1.66699 15.25 2.31699 16 3.11699 16.1L3.35866 16.1333C5.16699 16.375 7.95866 17.2916 9.55866 18.1666L9.59199 18.1833C9.81699 18.3083 10.1753 18.3083 10.392 18.1833C11.992 17.3 14.792 16.375 16.6087 16.1333L16.8837 16.1C17.6837 16 18.3337 15.25 18.3337 14.45Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10 5.07495V17.575" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6.45801 7.57495H4.58301" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.08301 10.075H4.58301" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                </a>                                                                       
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="./image/morocco.png" alt="">
+                                <div>
+                                    <span>ID: #4456</span>
+                                    <h4>Morocco</h4>
+                                    <p>N 1,200,00.00</p>
+                                </div>
+                            </td>
+                            <td>Ongoing</td>
+                            <td>1.12.2023</td>
+                            <td>4.2.2024</td>
+                            <td>5 Guests</td>
+                            <td>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.9833 10.5001C12.9833 12.1501 11.6499 13.4834 9.99993 13.4834C8.34993 13.4834 7.0166 12.1501 7.0166 10.5001C7.0166 8.85006 8.34993 7.51672 9.99993 7.51672C11.6499 7.51672 12.9833 8.85006 12.9833 10.5001Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.99987 17.3916C12.9415 17.3916 15.6832 15.6583 17.5915 12.6583C18.3415 11.4833 18.3415 9.50831 17.5915 8.33331C15.6832 5.33331 12.9415 3.59998 9.99987 3.59998C7.0582 3.59998 4.31654 5.33331 2.4082 8.33331C1.6582 9.50831 1.6582 11.4833 2.4082 12.6583C4.31654 15.6583 7.0582 17.3916 9.99987 17.3916Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.0004 11.6916C11.4363 11.6916 12.6004 10.5275 12.6004 9.09158C12.6004 7.65564 11.4363 6.49158 10.0004 6.49158C8.56445 6.49158 7.40039 7.65564 7.40039 9.09158C7.40039 10.5275 8.56445 11.6916 10.0004 11.6916Z" stroke="white" stroke-width="1.5"/>
+                                    <path d="M3.01675 7.57496C4.65842 0.358295 15.3501 0.366628 16.9834 7.58329C17.9418 11.8166 15.3084 15.4 13.0001 17.6166C11.3251 19.2333 8.67508 19.2333 6.99175 17.6166C4.69175 15.4 2.05842 11.8083 3.01675 7.57496Z" stroke="white" stroke-width="1.5"/>
+                                </svg>                                    
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.6">
+                                    <path d="M17.5 5.48332C14.725 5.20832 11.9333 5.06665 9.15 5.06665C7.5 5.06665 5.85 5.14998 4.2 5.31665L2.5 5.48332" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.08301 4.64163L7.26634 3.54996C7.39967 2.75829 7.49967 2.16663 8.90801 2.16663H11.0913C12.4997 2.16663 12.608 2.79163 12.733 3.55829L12.9163 4.64163" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.7087 8.1167L15.167 16.5084C15.0753 17.8167 15.0003 18.8334 12.6753 18.8334H7.32533C5.00033 18.8334 4.92533 17.8167 4.83366 16.5084L4.29199 8.1167" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.6084 14.25H11.3834" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.91699 10.9166H12.0837" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                                <a href="journal.html">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.3337 14.45V4.39162C18.3337 3.39162 17.517 2.64995 16.5253 2.73329H16.4753C14.7253 2.88329 12.067 3.77495 10.5837 4.70829L10.442 4.79995C10.2003 4.94995 9.80033 4.94995 9.55866 4.79995L9.35033 4.67495C7.86699 3.74995 5.21699 2.86662 3.46699 2.72495C2.47533 2.64162 1.66699 3.39162 1.66699 4.38329V14.45C1.66699 15.25 2.31699 16 3.11699 16.1L3.35866 16.1333C5.16699 16.375 7.95866 17.2916 9.55866 18.1666L9.59199 18.1833C9.81699 18.3083 10.1753 18.3083 10.392 18.1833C11.992 17.3 14.792 16.375 16.6087 16.1333L16.8837 16.1C17.6837 16 18.3337 15.25 18.3337 14.45Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10 5.07495V17.575" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6.45801 7.57495H4.58301" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.08301 10.075H4.58301" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>  
+                                </a>                                                                      
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="./image/malawi.png" alt="">
+                                <div>
+                                    <span>ID: #4457</span>
+                                    <h4>Malawi</h4>
+                                    <p>N 1,200,00.00</p>
+                                </div>
+                            </td>
+                            <td>Ongoing</td>
+                            <td>1.12.2023</td>
+                            <td>4.2.2024</td>
+                            <td>5 Guests</td>
+                            <td>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.9833 10.5001C12.9833 12.1501 11.6499 13.4834 9.99993 13.4834C8.34993 13.4834 7.0166 12.1501 7.0166 10.5001C7.0166 8.85006 8.34993 7.51672 9.99993 7.51672C11.6499 7.51672 12.9833 8.85006 12.9833 10.5001Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.99987 17.3916C12.9415 17.3916 15.6832 15.6583 17.5915 12.6583C18.3415 11.4833 18.3415 9.50831 17.5915 8.33331C15.6832 5.33331 12.9415 3.59998 9.99987 3.59998C7.0582 3.59998 4.31654 5.33331 2.4082 8.33331C1.6582 9.50831 1.6582 11.4833 2.4082 12.6583C4.31654 15.6583 7.0582 17.3916 9.99987 17.3916Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.0004 11.6916C11.4363 11.6916 12.6004 10.5275 12.6004 9.09158C12.6004 7.65564 11.4363 6.49158 10.0004 6.49158C8.56445 6.49158 7.40039 7.65564 7.40039 9.09158C7.40039 10.5275 8.56445 11.6916 10.0004 11.6916Z" stroke="white" stroke-width="1.5"/>
+                                    <path d="M3.01675 7.57496C4.65842 0.358295 15.3501 0.366628 16.9834 7.58329C17.9418 11.8166 15.3084 15.4 13.0001 17.6166C11.3251 19.2333 8.67508 19.2333 6.99175 17.6166C4.69175 15.4 2.05842 11.8083 3.01675 7.57496Z" stroke="white" stroke-width="1.5"/>
+                                </svg>                                    
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.6">
+                                    <path d="M17.5 5.48332C14.725 5.20832 11.9333 5.06665 9.15 5.06665C7.5 5.06665 5.85 5.14998 4.2 5.31665L2.5 5.48332" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.08301 4.64163L7.26634 3.54996C7.39967 2.75829 7.49967 2.16663 8.90801 2.16663H11.0913C12.4997 2.16663 12.608 2.79163 12.733 3.55829L12.9163 4.64163" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.7087 8.1167L15.167 16.5084C15.0753 17.8167 15.0003 18.8334 12.6753 18.8334H7.32533C5.00033 18.8334 4.92533 17.8167 4.83366 16.5084L4.29199 8.1167" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.6084 14.25H11.3834" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.91699 10.9166H12.0837" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                                <a href="journal.html">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.3337 14.45V4.39162C18.3337 3.39162 17.517 2.64995 16.5253 2.73329H16.4753C14.7253 2.88329 12.067 3.77495 10.5837 4.70829L10.442 4.79995C10.2003 4.94995 9.80033 4.94995 9.55866 4.79995L9.35033 4.67495C7.86699 3.74995 5.21699 2.86662 3.46699 2.72495C2.47533 2.64162 1.66699 3.39162 1.66699 4.38329V14.45C1.66699 15.25 2.31699 16 3.11699 16.1L3.35866 16.1333C5.16699 16.375 7.95866 17.2916 9.55866 18.1666L9.59199 18.1833C9.81699 18.3083 10.1753 18.3083 10.392 18.1833C11.992 17.3 14.792 16.375 16.6087 16.1333L16.8837 16.1C17.6837 16 18.3337 15.25 18.3337 14.45Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10 5.07495V17.575" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6.45801 7.57495H4.58301" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.08301 10.075H4.58301" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg> 
+                                </a>                                                                       
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+            </section>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>

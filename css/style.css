@@ -67,6 +67,10 @@ nav ul li a{
     font-family: 'Satoshi', sans-serif;
 }
 
+nav ul li a:hover{
+    color: #1D956A;
+}
+
 .btn{
     display: flex;
     gap: 8px;
@@ -96,6 +100,10 @@ button a{
 .btn button:nth-child(2){
     background: transparent;
     border: 1px solid #191919;
+}
+
+.btn button:nth-child(1):hover, .btn button:nth-child(2):hover{
+    background: #1D956A;
 }
 
 header img{
@@ -183,6 +191,7 @@ form[method=get]{
     padding-block: 20px;
     padding-inline: 32px 96px;
     margin-block: 40px;
+    color: #FAFAFA;
 }
 
 .formcontent{
@@ -203,6 +212,11 @@ form[method=get]{
     color: #B3B3B3;
     width: 100%;
     max-width: 200px;
+}
+
+.formcontent option{
+    padding: 16px;
+    background: #434343;
 }
 
 .formcontent input{
@@ -293,7 +307,7 @@ form[method=get] #subtn{
 
 .about p{
     padding-block: 96px;
-    font-size: 48px;
+    font-size: 32px;
     font-weight: 400;
 }
 
@@ -301,7 +315,7 @@ form[method=get] #subtn{
     background: #1D956A;
     padding: 4px 8px;
     border-radius: 4px;
-    font-size: 32px;
+    font-size: 20px;
 }
 
 .aboutcon-flex{
@@ -312,6 +326,11 @@ form[method=get] #subtn{
 
 .aboutcontext img{
     width: 360px;
+    transform: scale(1.0);
+}
+
+.aboutcontext img:hover{
+    transform: scale(0.95);
 }
 
 .about-con{
@@ -320,13 +339,13 @@ form[method=get] #subtn{
 
 .aboutcontext p{
     padding-block: 8px 0;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 400;
 }
 
 .aboutcontext h4{
     padding-block: 16px 0;
-    font-size: 34px;
+    font-size: 32px;
     font-weight: 500;
 }
 
@@ -406,14 +425,14 @@ form[method=get] #subtn{
 }
 
 .service-text p:nth-child(1){
-    font-size: 60px;
+    font-size: 52px;
     font-weight: 400;
-    width: 55%;
+    width: 45%;
 }
 
 .service-text p:nth-child(2){
-    width: 40%;
-    font-size: 32px;
+    width: 50%;
+    font-size: 28px;
     font-weight: 400;
 }
 
@@ -484,13 +503,12 @@ form[method=get] #subtn{
 }
 
 .dest-icon p{
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 12px;
     color: #D9D9D9;
 }
 
 .destinationcontent p{
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     color: #B3B3B3;
     margin-block: 8px;
@@ -759,6 +777,10 @@ footer form button:nth-child(2), footer form button:nth-child(3){
     color: #FFFFFF;
 }
 
+footer form button:nth-child(2):hover, footer form button:nth-child(3):hover{
+    border: 1px solid #1D956A;
+}
+
 footer form button p{
     font-size: 40px;
     color: #FFFFFF;
@@ -803,6 +825,10 @@ footer form button img{
     color: #FFFFFF;
     font-size: 24px;
     font-weight: 500;
+}
+
+.footercontent ul li a:hover{
+    color: #1D956A;
 }
 
 footer img{
@@ -888,7 +914,7 @@ footer img{
 
 .layer{
     background: transparent;
-    height: 90%;
+    height: 85%;
     width: 100%;
     position: absolute;
     top: 0;
@@ -922,7 +948,7 @@ footer img{
 }
 
 .layer:hover p{
-    bottom: 33%;
+    bottom: 28%;
     opacity: 1;
 }
 
@@ -1013,6 +1039,10 @@ footer img{
     position: relative;
 }
 
+.destinationcontent .layer{
+    height: 71%;
+}
+
 .destinationcontent .layer p{
     padding: 57px 0px;
     font-size: 20px;
@@ -1021,7 +1051,7 @@ footer img{
 }
 
 .destinationcontent .layer:hover p{
-    bottom: 48%;
+    bottom: 27%;
 }
 
 /* ---------------------------Booking modal------------------------ */
@@ -1092,6 +1122,7 @@ footer img{
     border-bottom: 1px solid #808080;
     padding: 12px;
     width: 320px;
+    color: #FAFAFA;
 }
 
 ::placeholder{
@@ -1158,6 +1189,10 @@ footer img{
     transition: 1s;
 }
 
+textarea{
+    color: #FAFAFA;
+}
+
 /* -------------------------------------------User------------------------------------------------ */
 .user{
     display: flex;
@@ -1173,7 +1208,7 @@ footer img{
 }
 
 .user img:nth-child(1){
-    width: 32px;
+    width: 28px;
 }
 
 .user img:nth-child(2){
@@ -1183,17 +1218,142 @@ footer img{
 
 #usercontent{
     display: flex;
-    /* align-items: center; */
+    grid-template-columns: 280px auto;
+    align-items: start;
+    font-family: 'Satoshi', sans-serif;
 }
 
 aside{
     background: #191919;
+    width: 100%;
+    max-width: 280px;
+    box-sizing: border-box;
+    position: relative;
+    padding: 30px 0px;
+    display: none;
+}
+
+aside > img{
+    width: 28px;
+    position: absolute;
+    right: 4%;
+    top: 2%;
+    display: none;
+}
+
+aside ul{
+    display: grid;
+    grid-template-columns: auto;
+    padding-left: 40px;
+    gap: 20px;
+    margin-block: 60px 50px;
+}
+
+aside ul li{
+    list-style-type: none;
+    text-align: left;
+}
+
+aside ul li a{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    text-decoration: none;
+    padding: 8px 24px;
+    border-radius: 4px;
+    background: transparent;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-top: 0px;
+}
+
+aside ul a{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    text-decoration: none;
+    padding: 8px 24px;
+    border-radius: 4px;
+    background: transparent;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-top: 96px;
+}
+
+aside ul li a:hover svg path, aside ul li a:hover{
+    background: #1D956A;
+    stroke: #FFFFFF;
+}
+
+aside ul li a p{
+    text-align: left;
+}
+
+#table{
+    width: 100%;
+    padding-inline: 28px;
 }
 
 table {
     border-collapse: collapse;
+    width: 100%;
+    color: #FFFFFF;
+    font-family: 'Satoshi', sans-serif;
 }
 
 thead{
     background: #1D956A;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+tbody{
+    background: #191919;
+    text-align: center;
+    border-radius: 8px;
+}
+
+tbody td{
+    margin-top: 8px;
+}
+
+tbody tr td:nth-child(1){
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+}
+
+td img{
+    width: 140px;
+    border-radius: 4px;
+}
+
+td span{
+    color: #1D956A;
+    font-size: 14px;
+}
+
+td h4{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 32px;
+}
+
+td p{
+    color: #1D956A;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+th, td{
+    padding: 16px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+td svg{
+    cursor: pointer;
 }

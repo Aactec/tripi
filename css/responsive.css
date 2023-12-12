@@ -384,12 +384,12 @@
     }
     .layer p{
         font-size: 16px;
-        padding: 32px 0px;
+        padding: 36px 0px;
         width: 116px;
         height: 116px;
     }
     .layer:hover p{
-        bottom: 36%;
+        bottom: 30%;
     }
     /* ---------------------------------Country----------------------------------- */
     .destinationcontent .layer p{
@@ -397,7 +397,7 @@
         padding: 48px 0px;
     }
     .destinationcontent .layer:hover p{
-        bottom: 45%;
+        bottom: 27%;
     }
     .destbtn button{
         padding: 12px 32px;
@@ -414,6 +414,13 @@
         top: -1.8%;
         left: 48%;
         width: 40px;
+    }
+    aside > img{
+        display: block;
+    }
+    table{
+        width: 1087px;
+        overflow-x: scroll;
     }
 }
 
@@ -781,7 +788,7 @@
         padding: 39px 0px;
     }
     .destinationcontent .layer:hover p{
-        bottom: 44%;
+        bottom: 26%;
     }
     .destbtn button{
         padding: 8px 20px;
