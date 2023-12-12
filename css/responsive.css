@@ -415,12 +415,18 @@
         left: 48%;
         width: 40px;
     }
+    aside{
+        padding: 16px 0px;
+    }
     aside > img{
         display: block;
     }
     table{
         width: 1087px;
         overflow-x: scroll;
+    }
+    aside ul{
+        padding-left: 16px;
     }
 }
 
