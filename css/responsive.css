@@ -408,7 +408,20 @@
         gap: 16px;
         margin-top: 40px;
     }
+    .layer p{
+        font-size: 16px;
+        padding: 32px 0px;
+        width: 116px;
+        height: 116px;
+    }
     /* ---------------------------------Country----------------------------------- */
+    .destinationcontent .layer p{
+        font-size: 16px;
+        padding: 48px 0px;
+    }
+    .destinationcontent .layer:hover p{
+        bottom: 48%;
+    }
     .destbtn button{
         padding: 12px 32px;
     }
@@ -767,6 +780,15 @@
         width: 80%;
         margin: auto;
     }
+    .layer p{
+        font-size: 16px;
+        padding: 26px 0px;
+        width: 100px;
+        height: 100px;
+    }
+    .layer:hover p{
+        bottom: 46%;
+    }
     /* ---------------------------------Country----------------------------------- */
     .countext{
         flex-direction: column;
@@ -780,11 +802,16 @@
         flex-basis: 100%;
         color: #1D956A;
     }
-    
     .countext p:nth-child(2){
         flex-basis: 100%;
         border-bottom: none;
         padding-bottom: 0px;
+    }
+    .destinationcontent .layer p{
+        padding: 39px 0px;
+    }
+    .destinationcontent .layer:hover p{
+        bottom: 48%;
     }
     .destbtn button{
         padding: 8px 20px;
