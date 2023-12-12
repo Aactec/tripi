@@ -787,7 +787,7 @@
         height: 100px;
     }
     .layer:hover p{
-        bottom: 50%;
+        bottom: 48%;
     }
     /* ---------------------------------Country----------------------------------- */
     .countext{
@@ -811,7 +811,7 @@
         padding: 39px 0px;
     }
     .destinationcontent .layer:hover p{
-        bottom: 40%;
+        bottom: 44%;
     }
     .destbtn button{
         padding: 8px 20px;
