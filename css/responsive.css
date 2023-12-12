@@ -23,15 +23,6 @@
         font-size: 80px;
         line-height: 5rem;
     }
-    /* .imagecarousel{
-        width: 520px;
-    }
-    .imagecarousel img{
-        width: 520px;
-    } */
-    .sponsor-logo{
-        overflow-x: scroll;
-    }
     .about-con button span{
         font-size: 20px;
     }
@@ -85,14 +76,6 @@
             border-bottom: 1px solid #D9D9D9;
             padding-bottom: 28px;
         }
-/* 
-        .bookinggrid{
-            display: grid;
-            grid-template-columns: auto;
-            place-items: center;
-            gap: 40px;
-            margin-block-start: 20px;
-        } */
 }
 
 
@@ -104,9 +87,6 @@
         font-weight: 400;
         line-height: 3.5rem;
     }
-    /* #arright, #arleft{
-        width: 92px;
-    } */
     .logo img{
         width: 23px;
         
@@ -176,15 +156,11 @@
         right: 30px;
     }
     .sponsor-logo{
-        overflow-x: scroll;
-    }
-    .sponsor-logo::-webkit-scrollbar{
-        display: none;
+        background: transparent;
     }
     .sponsor-logo img{
         height: 140px;
     }
-    
     .sponsor-logo img:nth-child(1){
         width: 136px;
     }
@@ -493,11 +469,6 @@
     }
     form[method=get] button{
         display: none;
-    }
-    .sponsor-logo{
-        padding: 16px 40px;
-        background: transparent;
-        gap: 24px;
     }
     .sponsor-logo img{
         height: 92px;
