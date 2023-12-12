@@ -970,13 +970,15 @@ footer img{
 
 /* ---------------------------Booking modal------------------------ */
 .booking{
-    display: none;
+    /* display: none; */
     position: absolute;
     left: 5%;
     top: 70%;
     background: #111111;
     width: 90%;
     border-radius: 4px;
+    /* transform: scale(0.1); */
+    transition: all ease-in-out 0.5s;
 }
 
 .booking .bookcontent{
@@ -1091,6 +1093,11 @@ footer img{
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 500;
+}
+
+.open{
+    display: block;
+    transform: scale(1);
 }
 
 /* -------------------------------------------User------------------------------------------------ */

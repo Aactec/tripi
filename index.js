@@ -44,3 +44,12 @@ leftCarousel.addEventListener("click", () => {
     carouselBody.style.scrollBehavior = "smooth";
     carouselBody.scrollLeft -= 264;
 });
+
+let bookings = document.getElementById("bookings");
+function openModal() {
+    bookings.classList.add("open");
+}
+
+function closeModal() {
+    bookings.classList.remove("open");
+}
