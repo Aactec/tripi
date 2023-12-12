@@ -433,6 +433,9 @@
         flex-direction: column-reverse;
         gap: 32px;
     }
+    .bookinggrid > img{
+        height: 448px;
+    }
     .bookcontent > img{
         top: -1.8%;
         left: 48%;
@@ -818,5 +821,30 @@
     }
     .destbtn button{
         padding: 8px 20px;
+    }
+    .bookcontent > img{
+        top: -2.5%;
+        left: 44%;
+    }
+    .bookinggrid > img{
+        display: none;
+    }
+    .bookingform form{
+        grid-template-columns: auto;
+    }
+    .bookingform form label{
+        width: 100%;
+        font-size: 12px;
+    }
+    .bookingform form input{
+        padding: 0px 12px;
+        width: 240px;
+    }
+    .checkout p{
+        font-size: 16px;
+    }
+    .checkout button{
+        padding: 8px 16px;
+        font-size: 12px;
     }
 }
