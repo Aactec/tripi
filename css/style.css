@@ -173,7 +173,7 @@ section{
     left: 0;
 }
 
-.scrollimage img:nth-child(2), .scrollimage img:nth-child(3), .scrollimage img:nth-child(4){
+.scrollimage img:nth-child(2), .scrollimage img:nth-child(3), .scrollimage img:nth-child(4), .scrollimage img:nth-child(5), .scrollimage img:nth-child(6), .scrollimage img:nth-child(7){
     max-height: 460px;
 }
 
