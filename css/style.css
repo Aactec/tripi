@@ -388,7 +388,7 @@ form[method=get] #subtn{
 
 .destgrid{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 24px;
     overflow-x: scroll;
     margin-block: 60px;
@@ -951,6 +951,18 @@ footer img{
     outline: none;
     border-radius: 4px;
     color: #FFFFFF;
+}
+
+#destination .destgrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    overflow-x: scroll;
+    margin-block: 60px;
+}
+
+#destination .destgrid::-webkit-scrollbar{
+    display: none;
 }
 
 .destinationcontent{
