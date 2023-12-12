@@ -157,12 +157,10 @@
         width: 24px;
         cursor: pointer;
     }
-    /* .imagecarousel{
-        width: 420px;
+    .scrollimage {
+        width: 90%;
+        margin: auto;
     }
-    .imagecarousel img{
-        width: 420px;
-    } */
     form[method=get]{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -459,18 +457,13 @@
         width: 86%;
         margin: auto;
     }
-    /* #arright, #arleft{
-        width: 52px;
-    } */
     nav{
         padding: 40px 60px;
     }
-    /* .imagecarousel{
-        width: 260px;
+    .scrollimage {
+        width: 80%;
+        margin: auto;
     }
-    .imagecarousel img{
-        width: 260px;
-    } */
     form[method=get]{
         margin: auto;
         width: 84%;
