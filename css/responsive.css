@@ -536,9 +536,12 @@
     .about{
         padding-block: 48px 16px;
     }
+    .about p{
+        font-size: 15px;
+    }
     .about svg{
-        width: 20px;
-        height: 20px;
+        width: 16px;
+        height: 16px;
     }
     .service{
         width: 100%;
