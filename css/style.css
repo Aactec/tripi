@@ -431,6 +431,7 @@ form[method=get] #subtn{
 
 .destinationcontent img{
     width: 418px;
+    max-height: 320px;
 }
 
 .desthead{
