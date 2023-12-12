@@ -1,3 +1,14 @@
+const navLinks = document.getElementById("navLink");
+
+let modal = document.getElementById("bookings");
+
+const heroSection = document.querySelector('.hero-section'),
+heroScrollDiv = heroSection.querySelector('.scrollimage'),
+heroControlRight =  heroSection.querySelector('#arright'),
+heroControlLeft = heroSection.querySelector('#arleft'),
+heroScrollImgs = heroScrollDiv.querySelectorAll('.imagecarousel');
+let heroScrollCount = 1;
+
 let scrollBody = document.querySelector(".revgrid");
 let rightArrow = document.getElementById("rightArrow");
 let leftArrow = document.getElementById("leftArrow");
@@ -6,19 +17,6 @@ let destBody = document.querySelector(".destgrid");
 let rightDest = document.getElementById("rightDest");
 let leftDest = document.getElementById("leftDest");
 
-// let carouselBody = document.querySelector(".imagecarousel");
-// let rightCarousel = document.getElementById("arright");
-// let leftCarousel = document.getElementById("arleft");
-const heroSection = document.querySelector('.hero-section'),
-heroScrollDiv = heroSection.querySelector('.scrollimage'),
-heroControlRight =  heroSection.querySelector('#arright'),
-heroControlLeft = heroSection.querySelector('#arleft'),
-heroScrollImgs = heroScrollDiv.querySelectorAll('.imagecarousel');
-let heroScrollCount = 1;
-
-let modal = document.getElementById("bookings");
-
-const navLinks = document.getElementById("navLink");
 
 
 
@@ -28,6 +26,7 @@ function showMenu() {
 function hideMenu() {
     navLinks.style.display = "none";
 }
+
 
 heroControlLeft.addEventListener('click', function () {
     if (heroScrollCount !== heroScrollImgs.length - 1) {
@@ -75,15 +74,6 @@ leftDest.addEventListener("click", () => {
     destBody.style.scrollBehavior = "smooth";
     destBody.scrollLeft -= 340;
 });
-
-// rightCarousel.addEventListener("click", () => {
-//     carouselBody.style.scrollBehavior = "smooth";
-//     carouselBody.scrollLeft += 264;
-// });
-// leftCarousel.addEventListener("click", () => {
-//     carouselBody.style.scrollBehavior = "smooth";
-//     carouselBody.scrollLeft -= 264;
-// });
 
 function openModal() {
     modal.classList.add("open");
