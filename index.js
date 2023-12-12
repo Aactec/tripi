@@ -1,14 +1,27 @@
+let scrollBody = document.querySelector(".revgrid");
+let rightArrow = document.getElementById("rightArrow");
+let leftArrow = document.getElementById("leftArrow");
+
+let destBody = document.querySelector(".destgrid");
+let rightDest = document.getElementById("rightDest");
+let leftDest = document.getElementById("leftDest");
+
+let carouselBody = document.querySelector(".imagecarousel");
+let rightCarousel = document.getElementById("arright");
+let leftCarousel = document.getElementById("arleft");
+
+let modal = document.getElementById("bookings");
+
 const navLinks = document.getElementById("navLink");
+
+
+
 function showMenu() {
     navLinks.style.display = "block";
 }
 function hideMenu() {
     navLinks.style.display = "none";
 }
-
-let scrollBody = document.querySelector(".revgrid");
-let rightArrow = document.getElementById("rightArrow");
-let leftArrow = document.getElementById("leftArrow");
 
 rightArrow.addEventListener("click", () => {
     scrollBody.style.scrollBehavior = "smooth";
@@ -19,10 +32,6 @@ leftArrow.addEventListener("click", () => {
     scrollBody.scrollLeft -= 314;
 });
 
-let destBody = document.querySelector(".destgrid");
-let rightDest = document.getElementById("rightDest");
-let leftDest = document.getElementById("leftDest");
-
 rightDest.addEventListener("click", () => {
     destBody.style.scrollBehavior = "smooth";
     destBody.scrollLeft += 340;
@@ -31,10 +40,6 @@ leftDest.addEventListener("click", () => {
     destBody.style.scrollBehavior = "smooth";
     destBody.scrollLeft -= 340;
 });
-
-let carouselBody = document.querySelector(".imagecarousel");
-let rightCarousel = document.getElementById("arright");
-let leftCarousel = document.getElementById("arleft");
 
 rightCarousel.addEventListener("click", () => {
     carouselBody.style.scrollBehavior = "smooth";
@@ -45,11 +50,10 @@ leftCarousel.addEventListener("click", () => {
     carouselBody.scrollLeft -= 264;
 });
 
-let bookings = document.getElementById("bookings");
 function openModal() {
-    bookings.classList.add("open");
+    modal.classList.add("open");
 }
 
 function closeModal() {
-    bookings.classList.remove("open");
+    modal.classList.remove("open");
 }

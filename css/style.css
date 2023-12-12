@@ -844,7 +844,7 @@ footer img{
 
 .layer{
     background: transparent;
-    height: 96%;
+    height: 90%;
     width: 100%;
     position: absolute;
     top: 0;
@@ -878,7 +878,7 @@ footer img{
 }
 
 .layer:hover p{
-    bottom: 40%;
+    bottom: 33%;
     opacity: 1;
 }
 
@@ -965,19 +965,19 @@ footer img{
 }
 
 .destinationcontent .layer:hover p{
-    bottom: 50%;
+    bottom: 48%;
 }
 
 /* ---------------------------Booking modal------------------------ */
 .booking{
-    /* display: none; */
+    display: none;
     position: absolute;
     left: 5%;
     top: 70%;
     background: #111111;
     width: 90%;
     border-radius: 4px;
-    /* transform: scale(0.1); */
+    transform: scale(0.1);
     transition: all ease-in-out 0.5s;
 }
 
@@ -993,6 +993,7 @@ footer img{
     top: -4%;
     left: 50%;
     width: 60px;
+    cursor: pointer;
 }
 
 .booking span{

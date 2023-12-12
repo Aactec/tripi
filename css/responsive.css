@@ -414,13 +414,16 @@
         width: 116px;
         height: 116px;
     }
+    .layer:hover p{
+        bottom: 36%;
+    }
     /* ---------------------------------Country----------------------------------- */
     .destinationcontent .layer p{
         font-size: 16px;
         padding: 48px 0px;
     }
     .destinationcontent .layer:hover p{
-        bottom: 48%;
+        bottom: 45%;
     }
     .destbtn button{
         padding: 12px 32px;
@@ -787,7 +790,7 @@
         height: 100px;
     }
     .layer:hover p{
-        bottom: 48%;
+        bottom: 40%;
     }
     /* ---------------------------------Country----------------------------------- */
     .countext{
