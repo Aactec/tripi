@@ -11,6 +11,7 @@ html{
 
 body{
     background: #111111;
+    overflow-x: hidden;
 }
 
 header{
@@ -124,7 +125,7 @@ section{
     color: #1D956A;
 }
 
-.scrollimage{
+/* .scrollimage{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -143,12 +144,59 @@ section{
 
 #arleft, #arright{
     cursor: pointer;
+} */
+
+.scrollimage {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 1240px;
+    gap: 25px;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.imagecarousel img{
+#arright, #arleft {
+    position: absolute;
+    z-index: 2;
+    top: 40%;
+    width: 32px;
+    width: clamp(40px, 7vw, 150px);
+    cursor: pointer;
+}
+
+#arright{
+    right: 0;
+}
+
+#arleft{
+    left: 0;
+}
+
+.scrollimage img:nth-child(2), .scrollimage img:nth-child(3), .scrollimage img:nth-child(4){
+    max-height: 460px;
+}
+
+.imagecarousel {
+    border-radius: 20px;
+    display: flex;
+    width: 70%;
+    transition: translate .5s linear;
+}
+
+.imagecarousel.abs {
+    width: 25%;
+    transform: rotate(35deg);
+    filter: blur(10px);
+    position: absolute;
+    z-index: -5;
+    transition: translate .5s linear;
+}
+
+/* .imagecarousel img{
     border-radius: 20px;
     width: 826px;
-}
+} */
 
 form[method=get]{
     margin-inline: 48px 72px;

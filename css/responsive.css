@@ -23,12 +23,12 @@
         font-size: 80px;
         line-height: 5rem;
     }
-    .imagecarousel{
+    /* .imagecarousel{
         width: 520px;
     }
     .imagecarousel img{
         width: 520px;
-    }
+    } */
     .sponsor-logo{
         overflow-x: scroll;
     }
@@ -104,9 +104,9 @@
         font-weight: 400;
         line-height: 3.5rem;
     }
-    #arright, #arleft{
+    /* #arright, #arleft{
         width: 92px;
-    }
+    } */
     .logo img{
         width: 23px;
         
@@ -157,12 +157,12 @@
         width: 24px;
         cursor: pointer;
     }
-    .imagecarousel{
+    /* .imagecarousel{
         width: 420px;
     }
     .imagecarousel img{
         width: 420px;
-    }
+    } */
     form[method=get]{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -459,18 +459,18 @@
         width: 86%;
         margin: auto;
     }
-    #arright, #arleft{
+    /* #arright, #arleft{
         width: 52px;
-    }
+    } */
     nav{
         padding: 40px 60px;
     }
-    .imagecarousel{
+    /* .imagecarousel{
         width: 260px;
     }
     .imagecarousel img{
         width: 260px;
-    }
+    } */
     form[method=get]{
         margin: auto;
         width: 84%;
