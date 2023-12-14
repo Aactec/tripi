@@ -1411,3 +1411,11 @@ td svg{
 .secondjournal{
     margin-top: 60px;
 }
+
+
+#log{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    width: 60%;
+}
