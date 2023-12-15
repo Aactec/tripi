@@ -1412,10 +1412,19 @@ td svg{
     margin-top: 60px;
 }
 
-
 #log{
+    width: 84%;
+    margin: auto;
+    overflow-x: scroll;
+}
+
+#log::-webkit-scrollbar{
+    display: none;
+}
+
+#log h5{
     color: white;
     font-size: 16px;
     font-weight: 500;
-    width: 60%;
+    /* width: 60%; */
 }
