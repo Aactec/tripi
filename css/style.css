@@ -306,8 +306,8 @@ form[method=get] #subtn{
 }
 
 .about p{
-    padding-block: 96px;
-    font-size: 32px;
+    padding-block: 40px 96px;
+    font-size: 36px;
     font-weight: 400;
 }
 
@@ -1378,7 +1378,7 @@ td svg{
 
 .journalbg{
     background: #191919;
-    border-bottom: 5px solid #1D956A;
+    border-bottom: 4px solid #1D956A;
     border-radius: 16px;
     padding-inline: 20px;
     padding-block-end: 16px;
