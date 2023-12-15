@@ -1040,7 +1040,7 @@ footer img{
 }
 
 .destinationcontent .layer{
-    height: 71%;
+    height: 69%;
 }
 
 .destinationcontent .layer p{
@@ -1051,7 +1051,7 @@ footer img{
 }
 
 .destinationcontent .layer:hover p{
-    bottom: 27%;
+    bottom: 28%;
 }
 
 /* ---------------------------Booking modal------------------------ */
