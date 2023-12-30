@@ -295,49 +295,51 @@
                     <button type="submit" onclick="openModal()">Proceed to Booking</button>
                 </div>
             </section>
-            <section class="booking" id="bookings">
-                <div class="bookcontent">
-                    <img src="./image/modalclose.png" alt="" onclick="closeModal()">
-                    <span>ID:#4455</span>
-                    <div class="bookinggrid">
-                        <div class="bookingform">
-                            <form action="">
-                                <label for="Full Name">Full Name</label>
-                                <input type="text" name="" id="">
-                                <label for="Email">Email</label>
-                                <input type="email" name="" id="">
-                                <label for="Phone no">Phone no</label>
-                                <input type="tel" name="" id="">
-                                <label for="Address">Address details</label>
-                                <input type="text" name="" id="">
-                            </form>
-                            <div class="traveldetails">
-                                <h4>Travel Details</h4>
+            <section class="formbooking" id="bookings">
+                <div class="booking">
+                    <div class="bookcontent">
+                        <img src="./image/modalclose.png" alt="" onclick="closeModal()">
+                        <span>ID:#4455</span>
+                        <div class="bookinggrid">
+                            <div class="bookingform">
                                 <form action="">
-                                    <label for="Travel package">Travel package</label>
-                                    <select name="" id="">
-                                        <option value="">Select Package</option>
-                                        <option value="">Sahara Desert</option>
-                                        <option value="">Atlas Mountains</option>
-                                        <option value="">Atlantic Coastline</option>
-                                    </select>
-                                    <label for="Date">Date</label>
-                                    <input type="date" name="" id="">
-                                    <label for="Traveler">Travelers</label>
-                                    <div class="traveler">
-                                        <input type="number" name="" id="">
-                                        <img src="" alt="">
-                                    </div>
-                                    <label for="info">Additional Information</label>
-                                    <textarea name="" id="" cols="8" rows="6"></textarea>
+                                    <label for="Full Name">Full Name</label>
+                                    <input type="text" name="" id="" required>
+                                    <label for="Email">Email</label>
+                                    <input type="email" name="" id="" required>
+                                    <label for="Phone no">Phone no</label>
+                                    <input type="number" name="" id="" required>
+                                    <label for="Address">Address details</label>
+                                    <input type="text" name="" id="" required>
                                 </form>
+                                <div class="traveldetails">
+                                    <h4>Travel Details</h4>
+                                    <form action="">
+                                        <label for="Travel package">Travel package</label>
+                                        <select name="" id="" required>
+                                            <option value="">Select Package</option>
+                                            <option value="">Sahara Desert</option>
+                                            <option value="">Atlas Mountains</option>
+                                            <option value="">Atlantic Coastline</option>
+                                        </select>
+                                        <label for="Date">Date</label>
+                                        <input type="date" name="" id="" required>
+                                        <label for="Traveler">Travelers</label>
+                                        <div class="traveler">
+                                            <input type="number" name="" id="" required>
+                                            <img src="" alt="">
+                                        </div>
+                                        <label for="info">Additional Information</label>
+                                        <textarea name="" id="" cols="8" rows="6" required></textarea>
+                                    </form>
+                                </div>
+                                <div class="checkout">
+                                    <p>N 1,200,000.00</p>
+                                    <button>Checkout</button>
+                                </div>
                             </div>
-                            <div class="checkout">
-                                <p>N 1,200,000.00</p>
-                                <button>Checkout</button>
-                            </div>
+                            <img id="morocco" src="./image/morocco.png" alt="">
                         </div>
-                        <img id="morocco" src="./image/morocco.png" alt="">
                     </div>
                 </div>
             </section>

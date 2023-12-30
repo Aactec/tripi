@@ -79,8 +79,10 @@ leftDest.addEventListener("click", () => {
 
 function openModal() {
     modal.classList.add("open");
+    document.body.style.overflowY = 'hidden';
 }
 
 function closeModal() {
     modal.classList.remove("open");
+    document.body.style.overflowY = 'scroll';
 }

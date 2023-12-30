@@ -857,7 +857,8 @@
         font-size: 12px;
     }
     .bookingform form input{
-        padding: 0px 12px;
+        padding-inline: 12px;
+        padding-block: 0px 8px;
         width: 240px;
     }
     .checkout p{
