@@ -465,6 +465,10 @@
 
 
 @media (max-width: 600px) {
+    .scrollimage{
+        overflow-x: hidden;
+        width: 100%;
+    }
     .hero-section{
         width: 100%;
         padding-block: 20px;
@@ -478,10 +482,6 @@
     }
     nav{
         padding: 40px 60px;
-    }
-    .scrollimage {
-        width: 80%;
-        margin: auto;
     }
     form[method=get]{
         margin: auto;
